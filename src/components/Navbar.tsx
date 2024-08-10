@@ -182,12 +182,12 @@ function Navbar() {
           <div className="relative">
             <Link href="/">
               <Image
-              src={BrandImg}
-              alt="brandImg"
-              width={1000}
-              height={1000}
-              className="h-full object-cover w-28 object-top"
-            />
+                src={BrandImg}
+                alt="brandImg"
+                width={1000}
+                height={1000}
+                className="h-full object-cover w-28 object-top"
+              />
               {/* Tecklo.Co */}
             </Link>
           </div>
@@ -208,21 +208,23 @@ function Navbar() {
               </MenubarMenu>
               <MenubarMenu>
                 <Link
-                  href="/contactform"
+                  href="/service"
                   className="hover:text-blue-500 duration-500"
                 >
-                  Team
+                  Service
+                </Link>
+              </MenubarMenu>
+              <MenubarMenu>
+                <Link
+                  href="/work"
+                  className="hover:text-blue-500 duration-500 hidden md:block"
+                >
+                  Our Work
                 </Link>
               </MenubarMenu>
             </Menubar>
           </div>
-          <Link
-            href="/contactform"
-            className="hover:text-blue-500 duration-500 hidden md:block"
-          >
-            Contact
-          </Link>
-          <div className="md:hidden">
+          <div className="md:hidden bg-white">
             <Sheet>
               <SheetTrigger>
                 <svg
@@ -240,7 +242,7 @@ function Navbar() {
                   />
                 </svg>
               </SheetTrigger>
-              <SheetContent className="w-56">
+              <SheetContent className="w-56 bg-white">
                 <SheetHeader>
                   <div className="flex flex-col gap-4 mt-6 text-center">
                     <Link href="/" className="hover:text-blue-500 duration-500">
@@ -253,28 +255,22 @@ function Navbar() {
                       About
                     </Link>
                     <Link
-                      href="/gallery"
+                      href="/service"
                       className="hover:text-blue-500 duration-500"
                     >
-                      Gallery
+                      Service
                     </Link>
                     <Link
-                      href="/tour"
+                      href="/work"
                       className="hover:text-blue-500 duration-500"
                     >
-                      Paragliding
+                      Our Work
                     </Link>
                     <Link
                       href="/contactform"
                       className="hover:text-blue-500 duration-500"
                     >
                       Contact
-                    </Link>
-                    <Link
-                      href="/course"
-                      className="hover:text-blue-500 duration-500"
-                    >
-                      Learn Fly
                     </Link>
                   </div>
                 </SheetHeader>

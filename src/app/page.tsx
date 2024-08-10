@@ -266,7 +266,7 @@ export default function Home() {
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-  items-center gap-4 px-5">
               {Services.map((service, index) => {
                 return (
-                  <Fade direction='up' triggerOnce key={index}>
+                  <Fade direction="up" triggerOnce key={index}>
                     <Card className="border h-[50vh] flex flex-col justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg hover:shadow-blue-400 hover:border-blue-500 transform transition-all duration-500 ease-in-out">
                       <Fade direction="up" triggerOnce>
                         <CardHeader>
@@ -311,7 +311,7 @@ export default function Home() {
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 justify-  items-center gap-4 px-5">
               {WhyChooseUs.map((service, index) => {
                 return (
-                  <Fade direction='up' triggerOnce key={index}>
+                  <Fade direction="up" triggerOnce key={index}>
                     <Card className="border h-[40vh] md:h-[30vh] w-full md:w-[15vw] flex flex-col justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg bg-gradient-to-tl from-[#92a2f367] to-[#ea34652c]">
                       <CardHeader className="text-center">
                         <CardTitle className="text-blue-600">
@@ -332,6 +332,65 @@ export default function Home() {
                 );
               })}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="max-w-7xl mx-auto px-5 flex flex-col md:flex-row justify-between pb-8 border-t-2 pt-10 animate-border">
+          <Fade direction="left" triggerOnce>
+            <h2 className="py-10 sm:py-0    ">Locations</h2>
+          </Fade>
+
+          <div className="flex flex-col md:flex-row gap-4">
+            <Fade direction="up" triggerOnce>
+              <div className=" flex align-center gap-4">
+                <div>
+                  <Image
+                    src="https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FuYWRhfGVufDB8fDB8fHww"
+                    alt="CANADA"
+                    width={1000}
+                    height={1000}
+                    loading="eager"
+                    className="w-20 aspect-square object-cover rounded-full"
+                  />
+                </div>
+                <p className="text-6xl font-bold   text-blue-500">CAN</p>
+                <span className="content__number">01</span>
+              </div>
+            </Fade>
+            <Fade direction="up" triggerOnce>
+              <div className=" flex align-center gap-4">
+                <div>
+                  <Image
+                    src="https://images.unsplash.com/photo-1662730738534-1ca761dfafcf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG11bWJhaXxlbnwwfHwwfHx8Mg%3D%3D"
+                    alt="Montreal"
+                    width={1000}
+                    height={1000}
+                    loading="eager"
+                    className="w-20 aspect-square object-cover rounded-full"
+                  />
+                </div>
+                <p className="text-6xl font-bold   text-blue-500">IND</p>
+                <span className="">02</span>
+              </div>
+            </Fade>
+            <Fade direction="up" triggerOnce>
+              <div className=" flex align-center gap-4">
+                <div>
+                  <Image
+                    src="https://images.unsplash.com/photo-1532952626554-d0cace1cd3fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHVzYXxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="USA"
+                    width={1000}
+                    height={1000}
+                    loading="eager"
+                    className="w-20 aspect-square object-cover rounded-full"
+                  />
+                </div>
+                <p className="text-6xl font-bold   text-blue-500">USA</p>
+                <span className="content__number">03</span>
+              </div>
+            </Fade>
           </div>
         </div>
       </section>
