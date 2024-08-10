@@ -116,7 +116,7 @@ export default function Home() {
   return (
     <main className="dark:bg-gray-800 dark:text-white bg-white text-black">
       <section>
-        <div className="flex flex-col overflow-hidden">
+        <div className="flex flex-col overflow-hidden mt-4">
           <ContainerScroll
             titleComponent={
               <>
@@ -337,7 +337,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="max-w-7xl mx-auto px-5 flex flex-col md:flex-row justify-between pb-8 border-t-2 pt-10 animate-border">
+        <div className="max-w-7xl mx-auto px-5 flex flex-col md:flex-row justify-between border-t-2 py-20 animate-border">
           <Fade direction="left" triggerOnce>
             <h2 className="py-10 sm:py-0    ">Locations</h2>
           </Fade>
@@ -352,7 +352,7 @@ export default function Home() {
                     width={1000}
                     height={1000}
                     loading="eager"
-                    className="w-20 aspect-square object-cover rounded-full"
+                    className="w-16 aspect-square object-cover rounded-full"
                   />
                 </div>
                 <p className="text-6xl font-bold   text-blue-500">CAN</p>
@@ -368,7 +368,7 @@ export default function Home() {
                     width={1000}
                     height={1000}
                     loading="eager"
-                    className="w-20 aspect-square object-cover rounded-full"
+                    className="w-16 aspect-square object-cover rounded-full"
                   />
                 </div>
                 <p className="text-6xl font-bold   text-blue-500">IND</p>
@@ -384,7 +384,7 @@ export default function Home() {
                     width={1000}
                     height={1000}
                     loading="eager"
-                    className="w-20 aspect-square object-cover rounded-full"
+                    className="w-16 aspect-square object-cover rounded-full"
                   />
                 </div>
                 <p className="text-6xl font-bold   text-blue-500">USA</p>

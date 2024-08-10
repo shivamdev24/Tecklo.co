@@ -24,27 +24,21 @@ function Footer() {
               About
             </Link>
             <Link className="hover:text-yellow-500 duration-500" href="/">
-              What We Do
+              Services
             </Link>
-            <Link
-              className="hover:text-yellow-500 duration-500"
-              href="/"
-            >
+            <Link className="hover:text-yellow-500 duration-500" href="/">
               Our Work
             </Link>
-            
           </div>
         </div>
         <div className="mt-4 md:mt-0">
           <h1 className="font-bold text-lg">Get In Touch</h1>
           <div>
-            <p>Contact No : </p>
+            <p>Contact No : (604) 206-0777</p>
             <p>
               Email : <a href="mailto:">example@domain.in</a>
             </p>
-            <p>
-              Office:: Address
-            </p>
+            <p>Office: Address</p>
           </div>
         </div>
       </div>
