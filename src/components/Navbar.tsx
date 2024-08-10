@@ -176,8 +176,8 @@ import BrandImg from "../../public/TeckloLogo.png";
 
 function Navbar() {
   return (
-    <nav>
-      <div className=" border border-blue-100 shadow-lg shadow-blue-200  ">
+    <nav className="sticky top-0 w-full z-50">
+      <div className=" border bg-white border-blue-100 shadow-lg shadow-blue-200  ">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-5 text-black py-3">
           <div className="relative">
             <Link href="/">
