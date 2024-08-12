@@ -16,6 +16,8 @@ import {
 import Link from "next/link";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { Fade } from "react-awesome-reveal";
+import Particlejs from "@/components/Particlejs";
+
 
 
 
@@ -113,6 +115,12 @@ const WhyChooseUs = [
 
 
 export default function Home() {
+
+
+
+
+
+
   return (
     <main className="dark:bg-gray-800 dark:text-white bg-white text-black">
       <section>
@@ -128,7 +136,7 @@ export default function Home() {
                   </div>
                   <div className="w-full md:w-3/4">
                     <h4 className="text-xl font-bold leading-[28px] md:text-6xl">
-                      Signifly is a digital agency. We help ambitious brands
+                      Tecklo is a digital agency. We help ambitious brands
                       become digital leaders.
                     </h4>
                   </div>
@@ -336,8 +344,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
-        <div className="max-w-7xl mx-auto px-5 flex flex-col md:flex-row justify-between border-t-2 py-20 animate-border">
+      <section className="overflow-hidden relative bg-gradient-to-tr   from-[#766fffcb] to-[#ea3465] py-20">
+        <div className="max-w-7xl mx-auto px-5 flex flex-col md:flex-row justify-between bg-transparent border-t-2 py-20 animate-border text-white">
           <Fade direction="left" triggerOnce>
             <h2 className="py-10 sm:py-0    ">Locations</h2>
           </Fade>
@@ -355,7 +363,7 @@ export default function Home() {
                     className="w-16 aspect-square object-cover rounded-full"
                   />
                 </div>
-                <p className="text-6xl font-bold   text-blue-500">CAN</p>
+                <p className="text-6xl font-bold   ">CAN</p>
                 <span className="content__number">01</span>
               </div>
             </Fade>
@@ -371,7 +379,7 @@ export default function Home() {
                     className="w-16 aspect-square object-cover rounded-full"
                   />
                 </div>
-                <p className="text-6xl font-bold   text-blue-500">IND</p>
+                <p className="text-7xl md:text-6xl font-bold   ">IND</p>
                 <span className="">02</span>
               </div>
             </Fade>
@@ -387,12 +395,13 @@ export default function Home() {
                     className="w-16 aspect-square object-cover rounded-full"
                   />
                 </div>
-                <p className="text-6xl font-bold   text-blue-500">USA</p>
+                <p className="text-6xl font-bold   ">USA</p>
                 <span className="content__number">03</span>
               </div>
             </Fade>
           </div>
         </div>
+        <Particlejs />
       </section>
     </main>
   );

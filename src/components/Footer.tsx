@@ -34,11 +34,11 @@ function Footer() {
         <div className="mt-4 md:mt-0">
           <h1 className="font-bold text-lg">Get In Touch</h1>
           <div>
-            <p>Contact No : (604) 206-0777</p>
+            <p>Contact No : +1 (604) 206-0777</p>
             <p>
-              Email : <a href="mailto:">example@domain.in</a>
+              Email : <a href="mailto:admin@tecklo.com">admin@tecklo.com</a>
             </p>
-            <p>Office: Address</p>
+            <p>Office: 27358 32 avenue, Aldergrove, BC V4W 3M5</p>
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ const nextConfig = {
       "img.freepik.com",
     ],
   },
+ 
 };
 
 export default nextConfig;
