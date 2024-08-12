@@ -42,7 +42,7 @@ const Particlejs = () => {
         },
       },
       fullScreen: {
-        enable: true,
+        enable: false,
         zIndex: -1,
       },
       fpsLimit: 180,
@@ -91,7 +91,7 @@ const Particlejs = () => {
 
   if (init) {
     return (
-      <div className="absolute top-0 left-0 ">
+      <div className="absolute h-screen top-0 left-0 ">
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
