@@ -6,24 +6,15 @@ import {
   MoveDirection,
   OutMode,
 } from "@tsparticles/engine";
-// import { loadAll } from "@tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
-// import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
-// import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
+import { loadAll } from "@tsparticles/all";
 
 const Particlejs = () => {
   const [init, setInit] = useState(false);
 
-  // this should be run only once per application lifetime
+  // Initialize particles engine
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-      // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-      // starting from v2 you can add only the features you need reducing the bundle size
-      //await loadAll(engine);
-      //await loadFull(engine);
-      await loadSlim(engine);
-      //await loadBasic(engine);
+      await loadAll(engine);
     }).then(() => {
       setInit(true);
     });
@@ -37,16 +28,15 @@ const Particlejs = () => {
     () => ({
       background: {
         color: {
-            enable: false,
           value: "#",
+          enable: false,
         },
       },
+      fpsLimit: 120,
       fullScreen: {
-        enable: false,
-        zIndex: -1,
+        enable: false, // Disabled fullscreen, controlled by Tailwind CSS
+        zIndex: 1,
       },
-      fpsLimit: 180,
-      
       particles: {
         color: {
           value: "#ffffff",
@@ -55,7 +45,7 @@ const Particlejs = () => {
           color: "#ffffff",
           distance: 150,
           enable: true,
-          opacity: 1,
+          opacity: 0.5,
           width: 1,
         },
         move: {
@@ -72,13 +62,13 @@ const Particlejs = () => {
           density: {
             enable: true,
           },
-          value: 120,
+          value: 80,
         },
         opacity: {
-          value: 0.8,
+          value: 0.5,
         },
         shape: {
-          type: "circle",
+          type: "fountain",
         },
         size: {
           value: { min: 1, max: 5 },
@@ -91,7 +81,7 @@ const Particlejs = () => {
 
   if (init) {
     return (
-      <div className="absolute h-screen top-0 left-0 ">
+      <div className="absolute top-0  w-full h-screen overflow-hidden">
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
@@ -101,8 +91,7 @@ const Particlejs = () => {
     );
   }
 
-  return <></>;
+  return null;
 };
-
 
 export default Particlejs;

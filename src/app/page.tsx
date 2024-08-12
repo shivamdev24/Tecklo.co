@@ -17,6 +17,7 @@ import Link from "next/link";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { Fade } from "react-awesome-reveal";
 import Particlejs from "@/components/Particlejs";
+import { BackgroundBeams } from "@/components/ui/background-beams";
 
 
 
@@ -344,9 +345,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="overflow-hidden relative bg-gradient-to-tr   from-[#766fffcb] to-[#ea3465] py-20">
-        <div className="max-w-7xl mx-auto px-5 flex flex-col md:flex-row justify-between bg-transparent border-t-2 py-20 animate-border text-white">
-          <Fade direction="left" triggerOnce>
+      
+        <section className="overflow-hidden relative bg-gradient-to-tr   from-[#766fffcb] to-[#00276b] py-20">
+        <div className="max-w-7xl mx-auto px-5 flex flex-col md:flex-row justify-between bg-transparent border-t-2 py-10 animate-border z-30 relative text-white">
+          <Fade direction="left" triggerOnce> 
             <h2 className="py-10 sm:py-0    ">Locations</h2>
           </Fade>
 
@@ -401,7 +403,8 @@ export default function Home() {
             </Fade>
           </div>
         </div>
-        <Particlejs />
+        {/* <Particlejs /> */}
+        <BackgroundBeams className=" w-screen object-cover z-10" />
       </section>
     </main>
   );
