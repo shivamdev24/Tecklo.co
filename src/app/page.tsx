@@ -123,20 +123,20 @@ export default function Home() {
 
 
   return (
-    <main className="dark:bg-gray-800 dark:text-white bg-white text-black">
+    <main className="">
       <section>
-        <div className="flex flex-col overflow-hidden mt-4">
+        <div className="flex flex-col overflow-hidden    bg-gradient-to-tr   from-[#a96fffdd] to-[#00276b]   ">
           <ContainerScroll
             titleComponent={
               <>
-                <div className=" flex flex-col md:flex-row justify-between gap-6 border-t-2 pt-8 animate-border text-start">
+                <div className=" flex flex-col md:flex-row justify-between gap-6 border-t-2 pt-8 animate-border text-start px-5">
                   <div className="w-full md:w-1/4">
-                    <h1 className="text-xs font-bold text-blue-800">
+                    <h1 className="text-xs font-bold text-white">
                       Digital Innovation Partner
                     </h1>
                   </div>
                   <div className="w-full md:w-3/4">
-                    <h4 className="text-xl font-bold leading-[28px] md:text-6xl">
+                    <h4 className="text-xl font-bold leading-[28px] md:text-6xl text-white">
                       Tecklo is a digital agency. We help ambitious brands
                       become digital leaders.
                     </h4>
@@ -345,10 +345,9 @@ export default function Home() {
         </div>
       </section>
 
-      
-        <section className="overflow-hidden relative bg-gradient-to-tr   from-[#766fffcb] to-[#00276b] py-20">
+      <section className="overflow-hidden relative bg-gradient-to-tr   from-[#766fffcb] to-[#00276b] py-20">
         <div className="max-w-7xl mx-auto px-5 flex flex-col md:flex-row justify-between bg-transparent  py-10 animate-border z-30 relative text-white">
-          <Fade direction="left" triggerOnce> 
+          <Fade direction="left" triggerOnce>
             <h2 className="py-10 sm:py-0    ">Locations</h2>
           </Fade>
 
