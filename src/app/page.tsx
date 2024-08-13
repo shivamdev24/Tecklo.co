@@ -125,11 +125,11 @@ export default function Home() {
   return (
     <main className="">
       <section>
-        <div className="flex flex-col overflow-hidden    bg-gradient-to-tr   from-[#a96fffdd] to-[#00276b]   ">
+        <div className="flex flex-col overflow-hidden    bg-gradient-to-tr   from-[#7240bddd] to-[#00276be3]   ">
           <ContainerScroll
             titleComponent={
               <>
-                <div className=" flex flex-col md:flex-row justify-between gap-6 border-t-2 pt-8 animate-border text-start px-5">
+                <div className=" flex flex-col md:flex-row justify-between gap-6 border-t-2 pt-8  text-start px-5">
                   <div className="w-full md:w-1/4">
                     <h1 className="text-xs font-bold text-white">
                       Digital Innovation Partner
@@ -264,7 +264,7 @@ export default function Home() {
           <InfiniteTextMoving />
         </section>
       </Fade>
-      <section className="py-10 bg-gradient-to-r from-blue-400 to-[#ea346551]">
+      <section className="py-10 bg-gradient-to-br from-blue-400 to-[#ea346551]">
         <div>
           <div className="flex flex-col max-w-7xl mx-auto gap-5 justify-center items-center">
             <Fade direction="left" triggerOnce>
