@@ -302,7 +302,7 @@ function page() {
                   <div key={index} className="max-w-sm  group/card">
                     <div
                       className={cn(
-                        "cursor-pointer overflow-hidden relative card h-72 rounded-[10px] shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4"
+                        "cursor-pointer overflow-hidden relative card h-64 rounded-[10px] shadow-xl max-w-sm mx-auto flex flex-col justify-around p-2"
                       )}
                     >
                       {props.img && (
@@ -314,11 +314,11 @@ function page() {
                           className="absolute w-full h-full top-0 left-0 object-cover"
                         />
                       )}
-                      <div className="absolute w-full h-full top-0 left-0 object-cover bg-black opacity-45"></div>
-                      <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
+                      <div className="absolute w-full h-full top-0 left-0 object-cover bg-black opacity-60"></div>
+                      <h1 className="font-bold text-3xl md:text-4xl text-gray-50 relative z-10">
                         {props.title}
                       </h1>
-                      <p className="font-medium text-sm text-gray-50 relative z-10 my-4">
+                      <p className="font-medium text-base text-gray-50 relative z-10 my-4">
                         {props.description}
                       </p>
                     </div>
@@ -387,7 +387,7 @@ function page() {
                         "cursor-pointer overflow-hidden relative card h-72 rounded-[10px] shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4"
                       )}
                     >
-                      {props.img && (
+                      {/* {props.img && (
                         <Image
                           src={props.img}
                           alt={props.title}
@@ -395,12 +395,12 @@ function page() {
                           height={1000}
                           className="absolute w-full h-full top-0 left-0 object-cover"
                         />
-                      )}
+                      )} */}
                       <div className="absolute w-full h-full top-0 left-0 object-cover bg-black opacity-60"></div>
-                      <h1 className="font-bold text-lg md:text-xl text-gray-50 relative z-10">
+                      <h1 className="font-bold text-2xl md:text-3xl text-gray-50 relative z-10">
                         {props.title}
                       </h1>
-                      <p className="font-medium text-sm text-gray-50 relative z-10 my-4">
+                      <p className="font-medium text-base text-gray-50 relative z-10 my-4">
                         {props.description}
                       </p>
                     </div>

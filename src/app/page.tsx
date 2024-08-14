@@ -16,56 +16,57 @@ import {
 import Link from "next/link";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { Fade } from "react-awesome-reveal";
-import Particlejs from "@/components/Particlejs";
+// import Particlejs from "@/components/Particlejs";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import ServiceComponentHome from "@/components/ServiceComponentHome";
 
 
 
 
 
 
-const Services = [
-  {
-    title: "Graphic, Web, and App Design",
-    description: "Creative designs that capture attention.",
-    content:
-      "We specialize in crafting visually stunning and user-friendly designs for web and mobile apps. Our designs not only look great but also deliver a seamless user experience that enhances engagement.",
-    footer: "Explore Our Designs",
-    direction: "left",
-  },
-  {
-    title: "Web and Mobile Development",
-    description: "Building dynamic and scalable digital solutions.",
-    content:
-      "Our development team creates responsive websites and mobile apps that are both functional and fast. We use the latest technologies to ensure your digital presence is robust and adaptable to your business needs.",
-    footer: "Start Your Project",
-    direction: "right",
-  },
-  {
-    title: "Digital Marketing",
-    description: "Maximize your online reach and influence.",
-    content:
-      "With our digital marketing services, we help you grow your brand's presence online. From SEO to social media strategies, we use data-driven approaches to increase traffic and boost conversions.",
-    footer: "Boost Your Presence",
-    direction: "up",
-  },
-  {
-    title: "CRM / ERP Tools solutions",
-    description: "Streamline your business operations.",
-    content:
-      "Our CRM and ERP solutions are designed to optimize your business processes. We offer custom tools that help you manage customer relationships, automate tasks, and integrate various aspects of your business into a single platform.",
-    footer: "Enhance Your Efficiency",
-    direction: "up",
-  },
-  {
-    title: "Web Hosting and Scraping",
-    description: "Reliable hosting and powerful data extraction.",
-    content:
-      "We provide secure and scalable web hosting solutions along with advanced web scraping services. Whether you need to host your site or extract valuable data, we have the tools and expertise to help you succeed.",
-    footer: "Discover Our Solutions",
-    direction: "down",
-  },
-];
+// const Services = [
+//   {
+//     title: "Graphic, Web, and App Design",
+//     description: "Creative designs that capture attention.",
+//     content:
+//       "We specialize in crafting visually stunning and user-friendly designs for web and mobile apps. Our designs not only look great but also deliver a seamless user experience that enhances engagement.",
+//     footer: "Explore Our Designs",
+//     direction: "left",
+//   },
+//   {
+//     title: "Web and Mobile Development",
+//     description: "Building dynamic and scalable digital solutions.",
+//     content:
+//       "Our development team creates responsive websites and mobile apps that are both functional and fast. We use the latest technologies to ensure your digital presence is robust and adaptable to your business needs.",
+//     footer: "Start Your Project",
+//     direction: "right",
+//   },
+//   {
+//     title: "Digital Marketing",
+//     description: "Maximize your online reach and influence.",
+//     content:
+//       "With our digital marketing services, we help you grow your brand's presence online. From SEO to social media strategies, we use data-driven approaches to increase traffic and boost conversions.",
+//     footer: "Boost Your Presence",
+//     direction: "up",
+//   },
+//   {
+//     title: "CRM / ERP Tools solutions",
+//     description: "Streamline your business operations.",
+//     content:
+//       "Our CRM and ERP solutions are designed to optimize your business processes. We offer custom tools that help you manage customer relationships, automate tasks, and integrate various aspects of your business into a single platform.",
+//     footer: "Enhance Your Efficiency",
+//     direction: "up",
+//   },
+//   {
+//     title: "Web Hosting and Scraping",
+//     description: "Reliable hosting and powerful data extraction.",
+//     content:
+//       "We provide secure and scalable web hosting solutions along with advanced web scraping services. Whether you need to host your site or extract valuable data, we have the tools and expertise to help you succeed.",
+//     footer: "Discover Our Solutions",
+//     direction: "down",
+//   },
+// ];
 
 
 const WhyChooseUs = [
@@ -272,11 +273,11 @@ export default function Home() {
                 What We Offer.
               </h1>
             </Fade>
-            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-  items-center gap-4 px-5">
+            {/* <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-  items-center gap-4 px-5">
               {Services.map((service, index) => {
                 return (
                   <Fade direction="up" triggerOnce key={index}>
-                    <Card className="border h-[50vh] flex flex-col justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg hover:shadow-blue-400 hover:border-blue-500 transform transition-all duration-500 ease-in-out">
+                    <Card className="border h-full flex flex-col justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg hover:shadow-blue-400 hover:border-blue-500 transform transition-all duration-500 ease-in-out">
                       <Fade direction="up" triggerOnce>
                         <CardHeader>
                           <CardTitle className="text-blue-600 text-start">
@@ -289,14 +290,18 @@ export default function Home() {
                         <CardContent>
                           <p className="text-gray-600">{service.content}</p>
                         </CardContent>
-                        {/* <CardFooter>
+                        <CardFooter>
                       <p>{service.footer}</p>
-                    </CardFooter> */}
+                    </CardFooter>
                       </Fade>
                     </Card>
                   </Fade>
                 );
               })}
+            </div> */}
+
+            <div className="px-5 max-w-7xl mx-auto  ">
+              <ServiceComponentHome />
             </div>
             <Fade direction="up" triggerOnce>
               <Link
