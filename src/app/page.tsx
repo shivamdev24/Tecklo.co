@@ -50,20 +50,20 @@ const Services = [
     direction: "up",
   },
   {
+    title: "CRM / ERP Tools solutions",
+    description: "Streamline your business operations.",
+    content:
+      "Our CRM and ERP solutions are designed to optimize your business processes. We offer custom tools that help you manage customer relationships, automate tasks, and integrate various aspects of your business into a single platform.",
+    footer: "Enhance Your Efficiency",
+    direction: "up",
+  },
+  {
     title: "Web Hosting and Scraping",
     description: "Reliable hosting and powerful data extraction.",
     content:
       "We provide secure and scalable web hosting solutions along with advanced web scraping services. Whether you need to host your site or extract valuable data, we have the tools and expertise to help you succeed.",
     footer: "Discover Our Solutions",
     direction: "down",
-  },
-  {
-    title: "CRM/ERP Tools",
-    description: "Streamline your business operations.",
-    content:
-      "Our CRM and ERP solutions are designed to optimize your business processes. We offer custom tools that help you manage customer relationships, automate tasks, and integrate various aspects of your business into a single platform.",
-    footer: "Enhance Your Efficiency",
-    direction: "left",
   },
 ];
 
@@ -268,7 +268,7 @@ export default function Home() {
         <div>
           <div className="flex flex-col max-w-7xl mx-auto gap-5 justify-center items-center">
             <Fade direction="left" triggerOnce>
-              <h1 className="text-center py-10 font-bold text-xl md:text-4xl text-black">
+              <h1 className="text-center py-10 font-bold text-2xl md:text-4xl text-white">
                 What We Offer.
               </h1>
             </Fade>
@@ -279,10 +279,10 @@ export default function Home() {
                     <Card className="border h-[50vh] flex flex-col justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg hover:shadow-blue-400 hover:border-blue-500 transform transition-all duration-500 ease-in-out">
                       <Fade direction="up" triggerOnce>
                         <CardHeader>
-                          <CardTitle className="text-blue-600">
+                          <CardTitle className="text-blue-600 text-start">
                             {service.title}
                           </CardTitle>
-                          <CardDescription className="text-black font-medium">
+                          <CardDescription className="text-black  font-medium text-start">
                             {service.description}
                           </CardDescription>
                         </CardHeader>
@@ -301,7 +301,7 @@ export default function Home() {
             <Fade direction="up" triggerOnce>
               <Link
                 className="text-center text-2xl text-white underline hover:text-blue-900 duration-500 py-1 rounded mt-8 "
-                href="/services"
+                href="/service"
               >
                 Read More....
               </Link>

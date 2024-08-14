@@ -266,12 +266,12 @@ function Navbar() {
                     >
                       Our Work
                     </Link>
-                    <Link
+                    {/* <Link
                       href="/contactform"
                       className="hover:text-blue-500 duration-500"
                     >
                       Contact
-                    </Link>
+                    </Link> */}
                   </div>
                 </SheetHeader>
               </SheetContent>

@@ -20,13 +20,13 @@ function Footer() {
         <div className="mt-8 md:mt-0">
           <h1 className="font-bold text-lg">Quick Links</h1>
           <div className="flex flex-col">
-            <Link className="hover:text-yellow-500 duration-500" href="/">
+            <Link className="hover:text-blue-500 duration-500" href="/about">
               About
             </Link>
-            <Link className="hover:text-yellow-500 duration-500" href="/">
+            <Link className="hover:text-blue-500 duration-500" href="/service">
               Services
             </Link>
-            <Link className="hover:text-yellow-500 duration-500" href="/">
+            <Link className="hover:text-blue-500 duration-500" href="/work">
               Our Work
             </Link>
           </div>
@@ -36,7 +36,7 @@ function Footer() {
           <div>
             <p>Contact No : +1 (604) 206-0777</p>
             <p>
-              Email : <a href="mailto:admin@tecklo.com">admin@tecklo.com</a>
+              Email : <a href="mailto:admin@tecklo.com">admin@tecklo.co</a>
             </p>
             <p>Office: 27358 32 avenue, Aldergrove, BC V4W 3M5</p>
           </div>
