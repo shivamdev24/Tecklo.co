@@ -387,7 +387,7 @@ function page() {
                         "cursor-pointer overflow-hidden relative card h-72 rounded-[10px] shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4"
                       )}
                     >
-                      {/* {props.img && (
+                      {props.img && (
                         <Image
                           src={props.img}
                           alt={props.title}
@@ -395,7 +395,7 @@ function page() {
                           height={1000}
                           className="absolute w-full h-full top-0 left-0 object-cover"
                         />
-                      )} */}
+                      )}
                       <div className="absolute w-full h-full top-0 left-0 object-cover bg-black opacity-60"></div>
                       <h1 className="font-bold text-2xl md:text-3xl text-gray-50 relative z-10">
                         {props.title}
