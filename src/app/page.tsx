@@ -326,7 +326,7 @@ export default function Home() {
               {WhyChooseUs.map((service, index) => {
                 return (
                   <Fade direction="up" triggerOnce key={index}>
-                    <Card className="border h-[40vh] lg:h-[30vh] w-full sm:w-[30vw] sm:h-[10vh] lg:w-[15vw] flex flex-col justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg bg-gradient-to-tl from-[#92a2f367] to-[#ea34652c]">
+                    <Card className="border h-[40vh] lg:h-[30vh] w-[80vw] sm:h-[10vh] lg:w-[15vw] flex flex-col justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg bg-gradient-to-tl from-[#92a2f367] to-[#ea34652c]">
                       <CardHeader className="text-center">
                         <CardTitle className="text-blue-600">
                           {service.title}
