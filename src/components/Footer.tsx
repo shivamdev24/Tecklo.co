@@ -44,12 +44,12 @@ function Footer() {
       </div>
       <div className="p-5 text-center border-t border-blue-500 max-w-4xl mx-auto flex flex-col gap-2 itme-center justify-center">
         <p>copyright &copy; 2024 Tecklo.co All Rights Reserved.</p>
-        <p className="text-sm">
+        {/* <p className="text-sm">
           Made by{" "}
           <a href="https://noblessetech.com/" className="font-bold underline">
             Noblessetech
           </a>
-        </p>
+        </p> */}
       </div>
     </footer>
   );

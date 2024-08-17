@@ -151,7 +151,7 @@ export default function Home() {
               alt="hero"
               height={720}
               width={1400}
-              className="mx-auto rounded-2xl object-cover h-full object-center"
+              className=" rounded-2xl object-cover h-full object-center"
               // draggable={false}
             />
           </ContainerScroll>
@@ -322,11 +322,11 @@ export default function Home() {
                 Why Choose Us
               </h1>
             </Fade>
-            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 justify-  items-center gap-4 px-5">
+            <div className="max-w-7xl mx-auto flex flex-wrap justify-center  items-center gap-4 px-5">
               {WhyChooseUs.map((service, index) => {
                 return (
                   <Fade direction="up" triggerOnce key={index}>
-                    <Card className="border h-[40vh] md:h-[30vh] w-full md:w-[15vw] flex flex-col justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg bg-gradient-to-tl from-[#92a2f367] to-[#ea34652c]">
+                    <Card className="border h-[40vh] lg:h-[30vh] w-full sm:w-[30vw] sm:h-[10vh] lg:w-[15vw] flex flex-col justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg bg-gradient-to-tl from-[#92a2f367] to-[#ea34652c]">
                       <CardHeader className="text-center">
                         <CardTitle className="text-blue-600">
                           {service.title}

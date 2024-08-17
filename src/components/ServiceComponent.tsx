@@ -381,7 +381,7 @@ function page() {
             <div className="flex flex-wrap gap-5 justify-evenly ">
               <Fade direction="up">
                 {Dwcu.map((props, index) => (
-                  <div key={index} className="max-w-xs w-full group/card">
+                  <div key={index} className="max-w-sm w-full group/card">
                     <div
                       className={cn(
                         "cursor-pointer overflow-hidden relative card h-72 rounded-[10px] shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4"

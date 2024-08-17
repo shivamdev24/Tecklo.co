@@ -191,7 +191,7 @@ function Navbar() {
               {/* Tecklo.Co */}
             </Link>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Menubar className="border-none bg-transparent gap-4 text-lg">
               <MenubarMenu>
                 <Link href="/" className="hover:text-blue-500 duration-500">
@@ -224,7 +224,7 @@ function Navbar() {
               </MenubarMenu>
             </Menubar>
           </div>
-          <div className="md:hidden bg-white">
+          <div className="lg:hidden bg-white">
             <Sheet>
               <SheetTrigger>
                 <svg
