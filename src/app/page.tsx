@@ -132,7 +132,7 @@ export default function Home() {
               <>
                 <div className=" flex flex-col md:flex-row justify-between gap-6 border-t-2 pt-8  text-start px-5">
                   <div className="w-full md:w-1/4">
-                    <h1 className="text-xs font-bold text-white">
+                    <h1 className="text-base md:text-lg font-bold text-white">
                       Digital Innovation Partner
                     </h1>
                   </div>
@@ -245,9 +245,9 @@ export default function Home() {
                 className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ea3465] to-[#766fffcb] opacity-20"
               />
             </div>
-            <div className="mx-auto max-w-7xl px-5 md:px-0 flex flex-col md:flex-row justify-between gap-6   ">
+            <div className="mx-auto max-w-7xl  md:px-6 flex flex-col md:flex-row justify-between gap-6   px-6">
               <div className="w-full md:w-1/4">
-                <h1 className="text-xs font-bold text-blue-800">Intro</h1>
+                <h1 className="text-lg md:text-xl font-bold text-blue-800">Intro</h1>
               </div>
               <div className="w-full md:w-3/4">
                 <h4 className="text-xl font-bold leading-[28px] md:text-6xl">
@@ -326,7 +326,7 @@ export default function Home() {
               {WhyChooseUs.map((service, index) => {
                 return (
                   <Fade direction="up" triggerOnce key={index}>
-                    <Card className="border h-[40vh] lg:h-[30vh] w-[80vw] sm:h-[10vh] lg:w-[15vw] flex flex-col justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg bg-gradient-to-tl from-[#92a2f367] to-[#ea34652c]">
+                    <Card className="border h-[25vh] lg:h-[25vh] w-[80vw] sm:h-[10vh] lg:w-[20vw] flex flex-col justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg bg-gradient-to-tl from-[#92a2f367] to-[#ea34652c]">
                       <CardHeader className="text-center">
                         <CardTitle className="text-blue-600">
                           {service.title}
@@ -351,9 +351,9 @@ export default function Home() {
       </section>
 
       <section className="overflow-hidden relative bg-gradient-to-tr   from-[#766fffcb] to-[#00276b] py-20">
-        <div className="max-w-7xl mx-auto px-5 flex flex-col md:flex-row items-center justify-between bg-transparent  py-10 animate-border z-30 relative text-white">
+        <div className="max-w-7xl mx-auto px-5 flex flex-col md:flex-row items-center justify-around bg-transparent  py-10 animate-border z-30 relative text-white">
           <Fade direction="left" triggerOnce>
-            <h2 className="py-10 sm:py-0    ">Locations</h2>
+            <h2 className="py-10 sm:py-0   text-lg md:text-xl ">Locations</h2>
           </Fade>
 
           <div className="flex flex-col md:flex-row gap-4">
@@ -366,11 +366,11 @@ export default function Home() {
                     width={1000}
                     height={1000}
                     loading="eager"
-                    className="w-16 aspect-square object-cover rounded-full"
+                    className="w-20 aspect-square object-cover rounded-full"
                   />
                 </div>
                 <div className="flex gap-3">
-                  <p className="text-6xl font-bold   ">CAN</p>
+                  <p className="text-7xl font-bold   ">CAN</p>
                   <span className="content__number">01</span>
                 </div>
               </div>
@@ -400,10 +400,10 @@ export default function Home() {
                     width={1000}
                     height={1000}
                     loading="eager"
-                    className="w-16 aspect-square object-cover rounded-full"
+                    className="w-20 aspect-square object-cover rounded-full"
                   />
                 </div>
-                <div className="flex gap-4"><p className="text-6xl font-bold   ">USA</p>
+                <div className="flex gap-4"><p className="text-7xl font-bold   ">USA</p>
                   <span className="content__number">03</span></div>
               </div>
             </Fade>

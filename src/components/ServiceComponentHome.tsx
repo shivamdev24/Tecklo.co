@@ -73,8 +73,8 @@ export default function ServicesComponent() {
         return (
           <Fade direction="up" triggerOnce key={index}>
             <Card
-              className={`border flex flex-col  justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg hover:shadow-blue-400 hover:border-blue-500 transform transition-all duration-500 ease-in-out w-[90vw] sm:w-[30vw] lg:w-[20vw] ${
-                isVisible ? "h-80  " : "h-40 "
+              className={`border flex flex-col  justify-center items-start rounded bg-white hover:scale-105 hover:shadow-lg hover:shadow-blue-400 hover:border-blue-500 transform transition-all duration-500 ease-in-out w-[90vw] sm:w-[30vw] xl:w-[20vw] ${
+                isVisible ? "lg:h-[20rem] xl:h-[22rem]  py-10 " : "h-40 "
               }`}
               style={{
                 overflow: "hidden",

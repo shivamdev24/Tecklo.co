@@ -65,7 +65,7 @@ function page() {
               Welcome to <span className="text-blue-500">Tecklo</span>
             </h1>
             <p className="text-base font-medium text-gray-600 text-center max-w-7xl mx-auto">
-              where innovation meets diversity in the heart of Canada.
+              Where innovation meets diversity in the heart of Canada.
               We&apos;re not just a tech startup. we&apos;re the backbone of
               creativity and expertise, driven by a team of exceptional minds
               from all corners of the globe.
@@ -82,7 +82,7 @@ function page() {
           </Fade>
           <Fade direction="up">
             <p>
-              <strong className="text-lg"> Our mission is simple:</strong> to
+              <strong className="text-lg"> Our mission is simple:</strong> To
               turn your business needs into reality with the most effective
               technology solutions and a touch of brilliance. Our team is a
               blend of visionaries, engineers, designers, and strategists, each
