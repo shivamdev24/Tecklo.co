@@ -130,7 +130,7 @@ export default function Home() {
           <ContainerScroll
             titleComponent={
               <>
-                <div className=" flex flex-col md:flex-row justify-between gap-6 border-t-2 pt-8  text-start px-5">
+                <div className=" flex flex-col lg:flex-row justify-between md:px-10 gap-6 border-t-2 pt-8  text-start px-5">
                   <div className="w-full md:w-1/4">
                     <h1 className="text-base md:text-lg font-bold text-white">
                       Digital Innovation Partner
@@ -247,7 +247,7 @@ export default function Home() {
             </div>
             <div className="mx-auto max-w-7xl  md:px-6 flex flex-col md:flex-row justify-between gap-6   px-6">
               <div className="w-full md:w-1/4">
-                <h1 className="text-lg md:text-xl font-bold text-blue-800">Intro</h1>
+                <h1 className="text-lg  md:text-2xl font-bold text-blue-800">Intro</h1>
               </div>
               <div className="w-full md:w-3/4">
                 <h4 className="text-xl font-bold leading-[28px] md:text-6xl">
@@ -326,7 +326,7 @@ export default function Home() {
               {WhyChooseUs.map((service, index) => {
                 return (
                   <Fade direction="up" triggerOnce key={index}>
-                    <Card className="border h-[25vh] lg:h-[25vh] w-[80vw] sm:h-[10vh] lg:w-[20vw] flex flex-col justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg bg-gradient-to-tl from-[#92a2f367] to-[#ea34652c]">
+                    <Card className="border h-[25vh] lg:h-[25vh] w-[80vw] sm:h-[10vh] md:w-[23vw] lg:w-[20vw] flex flex-col justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg bg-gradient-to-tl from-[#92a2f367] to-[#ea34652c]">
                       <CardHeader className="text-center">
                         <CardTitle className="text-blue-600">
                           {service.title}
