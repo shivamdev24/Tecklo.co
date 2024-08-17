@@ -36,7 +36,7 @@ const Project = [
   {
     projectName: "WoodAndVeneer",
     projectDescription:
-      "Aarv Wood and Veneer Pvt. Ltd., led by the Agarwal family, is a rising name in India's wood and veneer industry, with nearly 20 years of expertise. Mr. Vinay Agarwal, Mrs. Richa Agarwal, and Mr. Rupesh Tripathi drive its growth and stability.",
+      "Aarv Wood and Veneer Pvt. Ltd., led by the Agarwal family with nearly 20 years of expertise. Mr. Vinay Agarwal, Mrs. Richa Agarwal, and Mr. Rupesh Tripathi drive its growth and stability.",
     Live: "https://woodandveneer.in/",
     img1: Wd1,
     img2: Wd2,
@@ -44,7 +44,7 @@ const Project = [
   {
     projectName: "Sky Candy",
     projectDescription:
-      "Welcome to Bir Billing, India's paragliding capital, where adventure meets breathtaking views. Soar from 2,400 meters over lush valleys, forests, and snow-capped peaks in the scenic Dhauladhar Range for an unforgettable experience.",
+      "Welcome to Bir Billing, paragliding capital, where adventure meets breathtaking views. Soar from 2,400 meters over lush valleys, forests, and snow-capped peaks in the scenic Dhauladhar Range for an unforgettable experience.",
     Live: "https://www.birparagliding.in/",
     img1: Sky1,
     img2: Sky2,
@@ -119,7 +119,7 @@ function page() {
             {Project.map((props, index) => (
               <div
                 key={index}
-                className="flex flex-col-reverse md:flex-row gap-10 py-10 items-center"
+                className="flex flex-col-reverse md:flex-row gap-10 py-10 items-center border-t-2 border-blue-500"
               >
                 <div className="w-full md:w-1/3 flex flex-col gap-4">
                   <h1 className="text-4xl font-bold text-blue-500">
@@ -128,14 +128,14 @@ function page() {
                   <p className="text-base text-gray-600">
                     {props.projectDescription}
                   </p>
-                  <a
+                  {/* <a
                     className="bg-gray-700 p-2 w-full text-center rounded text-white hover:bg-blue-800 duration-500"
                     href={props.Live}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Live Preview
-                  </a>
+                  </a> */}
                 </div>
                 <div className="flex flex-col md:flex-row gap-4">
                   <div className="border rounded-[12px] pt-6 pl-6 overflow-hidden w-full md:w-96 bg-gray-800 shadow-md">

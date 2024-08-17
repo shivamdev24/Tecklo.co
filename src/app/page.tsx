@@ -351,7 +351,7 @@ export default function Home() {
       </section>
 
       <section className="overflow-hidden relative bg-gradient-to-tr   from-[#766fffcb] to-[#00276b] py-20">
-        <div className="max-w-7xl mx-auto px-5 flex flex-col md:flex-row justify-between bg-transparent  py-10 animate-border z-30 relative text-white">
+        <div className="max-w-7xl mx-auto px-5 flex flex-col md:flex-row items-center justify-between bg-transparent  py-10 animate-border z-30 relative text-white">
           <Fade direction="left" triggerOnce>
             <h2 className="py-10 sm:py-0    ">Locations</h2>
           </Fade>
@@ -369,11 +369,13 @@ export default function Home() {
                     className="w-16 aspect-square object-cover rounded-full"
                   />
                 </div>
-                <p className="text-6xl font-bold   ">CAN</p>
-                <span className="content__number">01</span>
+                <div className="flex gap-3">
+                  <p className="text-6xl font-bold   ">CAN</p>
+                  <span className="content__number">01</span>
+                </div>
               </div>
             </Fade>
-            <Fade direction="up" triggerOnce>
+            {/* <Fade direction="up" triggerOnce>
               <div className=" flex align-center gap-4">
                 <div>
                   <Image
@@ -388,7 +390,7 @@ export default function Home() {
                 <p className="text-7xl md:text-6xl font-bold   ">IND</p>
                 <span className="">02</span>
               </div>
-            </Fade>
+            </Fade> */}
             <Fade direction="up" triggerOnce>
               <div className=" flex align-center gap-4">
                 <div>
@@ -401,8 +403,8 @@ export default function Home() {
                     className="w-16 aspect-square object-cover rounded-full"
                   />
                 </div>
-                <p className="text-6xl font-bold   ">USA</p>
-                <span className="content__number">03</span>
+                <div className="flex gap-4"><p className="text-6xl font-bold   ">USA</p>
+                  <span className="content__number">03</span></div>
               </div>
             </Fade>
           </div>
@@ -410,6 +412,9 @@ export default function Home() {
         {/* <Particlejs /> */}
         <BackgroundBeams className=" w-screen object-cover z-10" />
       </section>
+
+
+     
     </main>
   );
 }
