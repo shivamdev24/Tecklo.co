@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import React from "react";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
+import ServiceCard from "./ServiceCard/ServiceCard";
 
 const Design = [
   {
@@ -296,7 +297,7 @@ function page() {
                 Our Services
               </h2>
             </Fade>
-            <div className="flex flex-wrap gap-10 justify-evenly ">
+            {/* <div className="flex flex-wrap gap-10 justify-evenly ">
               <Fade direction="up">
                 {Design.map((props, index) => (
                   <div key={index} className="max-w-sm  group/card">
@@ -325,7 +326,8 @@ function page() {
                   </div>
                 ))}
               </Fade>
-            </div>
+            </div> */}
+            <ServiceCard services={Design} />
           </div>
           <div className=" text-start mt-4">
             <Fade direction="left">
@@ -378,7 +380,7 @@ function page() {
                 Why Choose Us
               </h2>
             </Fade>
-            <div className="flex flex-wrap gap-5 justify-evenly ">
+            {/* <div className="flex flex-wrap gap-5 justify-evenly ">
               <Fade direction="up">
                 {Dwcu.map((props, index) => (
                   <div key={index} className="max-w-sm w-full group/card">
@@ -407,322 +409,13 @@ function page() {
                   </div>
                 ))}
               </Fade>
-            </div>
+            </div> */}
+            <ServiceCard services={Dwcu} />
           </div>
         </div>
       </section>
 
-      {/* <section>
-        <div className="max-w-7xl mx-auto py-10 flex flex-col gap-4">
-          <div>
-            <h2>Development</h2>
-            <div className="flex flex-wrap  justify-evenly ">
-              {Development.map((props, index) => (
-                <div key={index} className="max-w-xs w-full group/card">
-                  <div
-                    className={cn(
-                      "cursor-pointer overflow-hidden relative card h-72 rounded-[10px] shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4"
-                    )}
-                  >
-                    {props.img && (
-                      <Image
-                        src={props.img}
-                        alt={props.title}
-                        width={1000}
-                        height={1000}
-                        className="absolute w-full h-full top-0 left-0 object-cover"
-                      />
-                    )}
-                    <div className="absolute w-full h-full top-0 left-0 object-cover bg-black opacity-45"></div>
-                    <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
-                      {props.title}
-                    </h1>
-                    <p className="font-medium text-sm text-gray-50 relative z-10 my-4">
-                      {props.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className=" text-start">
-            <h2 className="text-2xl py-2 font-bold text-blue-500">
-              Our Approach
-            </h2>
-            <p>
-              By working closely with you, we ensure that every project reflects
-              your brand&apos;s values and objectives.{" "}
-            </p>
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold text-blue-500 py-8 text-center">
-              Why Choose Us
-            </h2>
-            <div className="flex flex-wrap gap-5 justify-evenly ">
-              {Dwcu.map((props, index) => (
-                <div key={index} className="max-w-xs w-full group/card">
-                  <div
-                    className={cn(
-                      "cursor-pointer overflow-hidden relative card h-48 rounded-[10px] shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4"
-                    )}
-                  >
-                    {props.img && (
-                      <Image
-                        src={props.img}
-                        alt={props.title}
-                        width={1000}
-                        height={1000}
-                        className="absolute w-full h-full top-0 left-0 object-cover"
-                      />
-                    )}
-                    <div className="absolute w-full h-full top-0 left-0 object-cover bg-black opacity-45"></div>
-                    <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
-                      {props.title}
-                    </h1>
-                    <p className="font-medium text-sm text-gray-50 relative z-10 my-4">
-                      {props.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="max-w-7xl mx-auto py-10 flex flex-col gap-4">
-          <div>
-            <h2>Marketing</h2>
-            <div className="flex flex-wrap  justify-evenly ">
-              {Marketing.map((props, index) => (
-                <div key={index} className="max-w-xs w-full group/card">
-                  <div
-                    className={cn(
-                      "cursor-pointer overflow-hidden relative card h-72 rounded-[10px] shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4"
-                    )}
-                  >
-                    {props.img && (
-                      <Image
-                        src={props.img}
-                        alt={props.title}
-                        width={1000}
-                        height={1000}
-                        className="absolute w-full h-full top-0 left-0 object-cover"
-                      />
-                    )}
-                    <div className="absolute w-full h-full top-0 left-0 object-cover bg-black opacity-45"></div>
-                    <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
-                      {props.title}
-                    </h1>
-                    <p className="font-medium text-sm text-gray-50 relative z-10 my-4">
-                      {props.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className=" text-start">
-            <h2 className="text-2xl py-2 font-bold text-blue-500">
-              Our Approach
-            </h2>
-            <p>
-              By working closely with you, we ensure that every project reflects
-              your brand&apos;s values and objectives.{" "}
-            </p>
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold text-blue-500 py-8 text-center">
-              Why Choose Us
-            </h2>
-            <div className="flex flex-wrap gap-5 justify-evenly ">
-              {Dwcu.map((props, index) => (
-                <div key={index} className="max-w-xs w-full group/card">
-                  <div
-                    className={cn(
-                      "cursor-pointer overflow-hidden relative card h-48 rounded-[10px] shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4"
-                    )}
-                  >
-                    {props.img && (
-                      <Image
-                        src={props.img}
-                        alt={props.title}
-                        width={1000}
-                        height={1000}
-                        className="absolute w-full h-full top-0 left-0 object-cover"
-                      />
-                    )}
-                    <div className="absolute w-full h-full top-0 left-0 object-cover bg-black opacity-45"></div>
-                    <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
-                      {props.title}
-                    </h1>
-                    <p className="font-medium text-sm text-gray-50 relative z-10 my-4">
-                      {props.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="max-w-7xl mx-auto py-10 flex flex-col gap-4">
-          <div>
-            <h2>Hosting</h2>
-            <div className="flex flex-wrap  justify-evenly ">
-              {Hosting.map((props, index) => (
-                <div key={index} className="max-w-xs w-full group/card">
-                  <div
-                    className={cn(
-                      "cursor-pointer overflow-hidden relative card h-72 rounded-[10px] shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4"
-                    )}
-                  >
-                    {props.img && (
-                      <Image
-                        src={props.img}
-                        alt={props.title}
-                        width={1000}
-                        height={1000}
-                        className="absolute w-full h-full top-0 left-0 object-cover"
-                      />
-                    )}
-                    <div className="absolute w-full h-full top-0 left-0 object-cover bg-black opacity-45"></div>
-                    <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
-                      {props.title}
-                    </h1>
-                    <p className="font-medium text-sm text-gray-50 relative z-10 my-4">
-                      {props.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className=" text-start">
-            <h2 className="text-2xl py-2 font-bold text-blue-500">
-              Our Approach
-            </h2>
-            <p>
-              By working closely with you, we ensure that every project reflects
-              your brand&apos;s values and objectives.{" "}
-            </p>
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold text-blue-500 py-8 text-center">
-              Why Choose Us
-            </h2>
-            <div className="flex flex-wrap gap-5 justify-evenly ">
-              {Dwcu.map((props, index) => (
-                <div key={index} className="max-w-xs w-full group/card">
-                  <div
-                    className={cn(
-                      "cursor-pointer overflow-hidden relative card h-48 rounded-[10px] shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4"
-                    )}
-                  >
-                    {props.img && (
-                      <Image
-                        src={props.img}
-                        alt={props.title}
-                        width={1000}
-                        height={1000}
-                        className="absolute w-full h-full top-0 left-0 object-cover"
-                      />
-                    )}
-                    <div className="absolute w-full h-full top-0 left-0 object-cover bg-black opacity-45"></div>
-                    <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
-                      {props.title}
-                    </h1>
-                    <p className="font-medium text-sm text-gray-50 relative z-10 my-4">
-                      {props.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="max-w-7xl mx-auto py-10 flex flex-col gap-4">
-          <div>
-            <h2>Tools</h2>
-            <div className="flex flex-wrap  justify-evenly ">
-              {Tools.map((props, index) => (
-                <div key={index} className="max-w-xs w-full group/card">
-                  <div
-                    className={cn(
-                      "cursor-pointer overflow-hidden relative card h-72 rounded-[10px] shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4"
-                    )}
-                  >
-                    {props.img && (
-                      <Image
-                        src={props.img}
-                        alt={props.title}
-                        width={1000}
-                        height={1000}
-                        className="absolute w-full h-full top-0 left-0 object-cover"
-                      />
-                    )}
-                    <div className="absolute w-full h-full top-0 left-0 object-cover bg-black opacity-45"></div>
-                    <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
-                      {props.title}
-                    </h1>
-                    <p className="font-medium text-sm text-gray-50 relative z-10 my-4">
-                      {props.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className=" text-start">
-            <h2 className="text-2xl py-2 font-bold text-blue-500">
-              Our Approach
-            </h2>
-            <p>
-              By working closely with you, we ensure that every project reflects
-              your brand&apos;s values and objectives.{" "}
-            </p>
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold text-blue-500 py-8 text-center">
-              Why Choose Us
-            </h2>
-            <div className="flex flex-wrap gap-5 justify-evenly ">
-              {Dwcu.map((props, index) => (
-                <div key={index} className="max-w-xs w-full group/card">
-                  <div
-                    className={cn(
-                      "cursor-pointer overflow-hidden relative card h-48 rounded-[10px] shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4"
-                    )}
-                  >
-                    {props.img && (
-                      <Image
-                        src={props.img}
-                        alt={props.title}
-                        width={1000}
-                        height={1000}
-                        className="absolute w-full h-full top-0 left-0 object-cover"
-                      />
-                    )}
-                    <div className="absolute w-full h-full top-0 left-0 object-cover bg-black opacity-45"></div>
-                    <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
-                      {props.title}
-                    </h1>
-                    <p className="font-medium text-sm text-gray-50 relative z-10 my-4">
-                      {props.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section> */}
+     
     </div>
   );
 }
