@@ -17,18 +17,7 @@ function InfiniteTextMoving() {
           <div className="whitespace-nowrap  text-5xl md:text-[6rem] bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent">
             From concept to creation.
           </div>
-          <div className="whitespace-nowrap text-5xl md:text-[6rem] bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent">
-            Your vision, our mission.
-          </div>
-          <div className="whitespace-nowrap  text-5xl md:text-[6rem] bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent">
-            From concept to creation.
-          </div>
-          <div className="whitespace-nowrap text-5xl md:text-[6rem] bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent">
-            Your vision, our mission.
-          </div>
-          <div className="whitespace-nowrap  text-5xl md:text-[6rem] bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent">
-            From concept to creation.
-          </div>
+         
         </div>
       </div>
     </div>

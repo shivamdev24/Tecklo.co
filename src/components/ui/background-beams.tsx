@@ -3,7 +3,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-export const BackgroundBeams = React.memo(
+
+
+ const BackgroundBeams = React.memo(
   ({ className }: { className?: string }) => {
     const paths = [
       "M-380 -189C-380 -189 -312 216 152 343C616 470 684 875 684 875",
@@ -84,8 +86,8 @@ export const BackgroundBeams = React.memo(
               key={`path-` + index}
               d={path}
               stroke={`url(#linearGradient-${index})`}
-              strokeOpacity="0.8"
-              strokeWidth="0.9"
+              strokeOpacity="0.4"
+              strokeWidth="0.5"
             ></motion.path>
           ))}
           <defs>
@@ -103,10 +105,10 @@ export const BackgroundBeams = React.memo(
                   x1: ["0%", "100%"],
                   x2: ["0%", "200%"],
                   y1: ["0%", "100%"],
-                  y2: ["0%", `${93 + Math.random() * 20}%`],
+                  y2: ["0%", `${93 + Math.random() * 10}%`],
                 }}
                 transition={{
-                  duration: Math.random() * 20 + 10,
+                  duration: Math.random() * 20 + 20,
                   ease: "easeInOut",
                   repeat: Infinity,
                   delay: Math.random() * 20,
@@ -139,3 +141,7 @@ export const BackgroundBeams = React.memo(
 );
 
 BackgroundBeams.displayName = "BackgroundBeams";
+
+
+
+export default BackgroundBeams;

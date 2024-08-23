@@ -1,7 +1,7 @@
 "use client"
 
 
-import InfiniteTextMoving from "@/components/infinite-moving-text/InfiniteTextMoving";
+// import InfiniteTextMoving from "@/components/infinite-moving-text/InfiniteTextMoving";
 import Img1 from '../../public/images/1.jpg';
 import Image from "next/image";
 
@@ -11,14 +11,21 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+
+
+
+
 import Link from "next/link";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { Fade } from "react-awesome-reveal";
-import { BackgroundBeams } from "@/components/ui/background-beams";
+// import { BackgroundBeams } from "@/components/ui/background-beams";
 import ServiceComponentHome from "@/components/ServiceComponentHome";
+import Hero from "@/components/Hero/Hero";
+import dynamic from "next/dynamic";
 
 
-
+const BackgroundBeams = dynamic(() => import('@/components/ui/background-beams'))
+const InfiniteTextMoving = dynamic(() => import('@/components/infinite-moving-text/InfiniteTextMoving'))
 
 
 
@@ -113,7 +120,24 @@ export default function Home() {
       </section>
      
 
-      <Fade direction="up" triggerOnce>
+     <section className="py-20">
+        <div className=" flex flex-col lg:flex-row justify-between md:px-10 gap-6  pt-8  text-start px-5">
+          <div className="w-full md:w-1/4">
+            <h1 className="text-base md:text-lg font-bold text-black">
+              Digital Innovation Partner
+            </h1>
+          </div>
+          <div className="w-full md:w-3/4">
+            <h4 className="text-xl font-bold leading-[28px] md:text-6xl text-black">
+              Tecklo is a digital agency. We help ambitious brands
+              become digital leaders.
+            </h4>
+          </div>
+        </div>
+      <Hero />
+     </section>
+
+      <Fade direction="right" >
         <section className="">
           <div className="relative isolate overflow-hidden bg-blue-100 py-24 sm:py-32">
             <div
@@ -155,15 +179,15 @@ export default function Home() {
         </section>
       </Fade>
 
-      <Fade direction="up" triggerOnce>
-        <section className="py-10">
+      <Fade direction="up" >
+        <section className="py-5 md:py-8">
           <InfiniteTextMoving />
         </section>
       </Fade>
       <section className="py-10 bg-gradient-to-br from-blue-400 to-[#ea346551]">
         <div>
           <div className="flex flex-col max-w-7xl mx-auto gap-5 justify-center items-center">
-            <Fade direction="left" triggerOnce>
+            <Fade direction="left" >
               <h1 className="text-center py-10 font-bold text-2xl md:text-4xl text-white">
                 What We Offer.
               </h1>
@@ -173,7 +197,7 @@ export default function Home() {
             <div className="px-5 max-w-7xl mx-auto  ">
               <ServiceComponentHome />
             </div>
-            <Fade direction="up" triggerOnce>
+            <Fade direction="up" >
               <Link
                 className="text-center text-2xl text-white underline hover:text-blue-900 duration-500 py-1 rounded mt-8 "
                 href="/service"
@@ -187,7 +211,7 @@ export default function Home() {
       <section className="py-10 ">
         <div>
           <div className="flex flex-col max-w-7xl mx-auto gap-5 justify-center items-center">
-            <Fade direction="left" triggerOnce>
+            <Fade direction="left" >
               <h1 className="text-center py-10 font-bold text-xl md:text-4xl text-black">
                 Why Choose Us
               </h1>
@@ -195,7 +219,7 @@ export default function Home() {
             <div className="max-w-7xl mx-auto flex flex-wrap justify-center  items-center gap-4 px-5">
               {WhyChooseUs.map((service, index) => {
                 return (
-                  <Fade direction="up" triggerOnce key={index}>
+                  <Fade direction="up"  key={index}>
                     <Card className="border h-[25vh] lg:h-[25vh] w-[80vw] sm:h-[10vh] md:w-[23vw] lg:w-[20vw] flex flex-col justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg bg-gradient-to-tl from-[#92a2f367] to-[#ea34652c]">
                       <CardHeader className="text-center">
                         <CardTitle className="text-blue-600">
@@ -217,12 +241,12 @@ export default function Home() {
 
       <section className="overflow-hidden relative bg-gradient-to-tr   from-[#766fffcb] to-[#00276b] py-20">
         <div className="max-w-7xl mx-auto px-5 flex flex-col md:flex-row items-center justify-around bg-transparent  py-10 animate-border z-30 relative text-white">
-          <Fade direction="left" triggerOnce>
+          <Fade direction="left" >
             <h2 className="py-10 sm:py-0   text-lg md:text-xl ">Locations</h2>
           </Fade>
 
           <div className="flex flex-col md:flex-row gap-4">
-            <Fade direction="up" triggerOnce>
+            <Fade direction="up" >
               <div className=" flex align-center gap-4">
                 <div>
                   <Image
@@ -241,7 +265,7 @@ export default function Home() {
               </div>
             </Fade>
           
-            <Fade direction="up" triggerOnce>
+            <Fade direction="up" >
               <div className=" flex align-center gap-4">
                 <div>
                   <Image

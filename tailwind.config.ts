@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss"
 
-import colors from 'tailwindcss/colors'
+// import colors from 'tailwindcss/colors'
 
 import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette'
 
@@ -83,7 +83,7 @@ const config = {
             transform: "translateX(0%)",
           },
           to: {
-            transform: "translateX(-50%)",
+            transform: "translateX(-40%)",
           },
         },
       },
