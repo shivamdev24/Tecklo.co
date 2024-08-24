@@ -46,30 +46,8 @@ export const metadata: Metadata = {
 
 
 const Project = [
-  {
-    projectName: "Shelves Tech",
-    projectDescription:
-      "We make advanced medical technology accessible worldwide, ensuring all healthcare facilities have access to top equipment, regardless of location or budget, to improve outcomes and save lives.",
-    Live: "https://shelvestech.com/",
-    img1: St1,
-    img2: St2,
-  },
-  {
-    projectName: "WoodAndVeneer",
-    projectDescription:
-      "Aarv Wood and Veneer Pvt. Ltd., led by the Agarwal family with nearly 20 years of expertise. Mr. Vinay Agarwal, Mrs. Richa Agarwal, and Mr. Rupesh Tripathi drive its growth and stability.",
-    Live: "https://woodandveneer.in/",
-    img1: Wd1,
-    img2: Wd2,
-  },
-  {
-    projectName: "Sky Candy",
-    projectDescription:
-      "Welcome to Bir Billing, paragliding capital, where adventure meets breathtaking views. Soar from 2,400 meters over lush valleys, forests, and snow-capped peaks in the scenic Dhauladhar Range for an unforgettable experience.",
-    Live: "https://www.birparagliding.in/",
-    img1: Sky1,
-    img2: Sky2,
-  },
+  
+  
   {
     projectName: "Sweepy Maid",
     projectDescription:
@@ -99,6 +77,14 @@ const Project = [
     img2: D2,
   },
   {
+    projectName: "Shelves Tech",
+    projectDescription:
+      "We make advanced medical technology accessible worldwide, ensuring all healthcare facilities have access to top equipment, regardless of location or budget, to improve outcomes and save lives.",
+    Live: "https://shelvestech.com/",
+    img1: St1,
+    img2: St2,
+  },
+  {
     projectName: "DELIGHT BITE",
     projectDescription:
       "your ultimate destination for Best Indian Food in Coquitlam. Delight Bite is the Best Indian Restaurant in Coquitlam.",
@@ -111,6 +97,14 @@ const Project = [
       "Helping Immigration Firms grow consistently through innovative approaches, proven strategies & consistent results.",
     img1: F1,
     img2: F2,
+  },
+  {
+    projectName: "WoodAndVeneer",
+    projectDescription:
+      "Aarv Wood and Veneer Pvt. Ltd., led by the Agarwal family with nearly 20 years of expertise. Mr. Vinay Agarwal, Mrs. Richa Agarwal, and Mr. Rupesh Tripathi drive its growth and stability.",
+    Live: "https://woodandveneer.in/",
+    img1: Wd1,
+    img2: Wd2,
   },
   {
     projectName: "Convertithub",
@@ -139,6 +133,15 @@ const Project = [
       "Providing award-winning immigration services for over a decade with expert legal solutions tailored to meet our clients' needs in a fast-evolving industry.",
     img1: J1,
     img2: J2,
+  },
+
+  {
+    projectName: "Sky Candy",
+    projectDescription:
+      "Welcome to Bir Billing, paragliding capital, where adventure meets breathtaking views. Soar from 2,400 meters over lush valleys, forests, and snow-capped peaks in the scenic Dhauladhar Range for an unforgettable experience.",
+    Live: "https://www.birparagliding.in/",
+    img1: Sky1,
+    img2: Sky2,
   },
 ];
 
