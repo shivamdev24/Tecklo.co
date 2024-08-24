@@ -87,7 +87,7 @@ export default function Home() {
   return (
     <main className="">
       <section>
-        <div className="flex flex-col overflow-hidden    bg-gradient-to-tr   from-[#7240bddd] to-[#00276be3]   ">
+        <div className="flex flex-col overflow-hidden -mt-16   bg-gradient-to-tr   from-[#7240bddd] to-[#00276be3]   ">
           <ContainerScroll
             titleComponent={
               <>
