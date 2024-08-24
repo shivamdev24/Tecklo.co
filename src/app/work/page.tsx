@@ -9,6 +9,27 @@ import St2 from '../../../public/images/st2.png'
 import Wd1 from '../../../public/images/wd1.png'
 import Wd2 from '../../../public/images/wd2.png'
 
+import A1 from '../../../public/images/A1.png'
+import A2 from '../../../public/images/A2.png'
+import B1 from '../../../public/images/B1.png'
+import B2 from '../../../public/images/B2.png'
+import C1 from '../../../public/images/C1.png'
+import C2 from '../../../public/images/C2.png'
+import D1 from '../../../public/images/D1.png'
+import D2 from '../../../public/images/D2.png'
+import E1 from '../../../public/images/E1.png'
+import E2 from '../../../public/images/E2.png'
+import F1 from '../../../public/images/F1.png'
+import F2 from '../../../public/images/F2.png'
+import G1 from '../../../public/images/G1.png'
+import G2 from '../../../public/images/G2.png'
+import H1 from '../../../public/images/H1.png'
+import H2 from '../../../public/images/H2.png'
+import I1 from '../../../public/images/I1.png'
+import I2 from '../../../public/images/I2.png'
+import J1 from '../../../public/images/J1.png'
+import J2 from '../../../public/images/J2.png'
+
 
 
 import { Metadata } from 'next'
@@ -48,6 +69,76 @@ const Project = [
     Live: "https://www.birparagliding.in/",
     img1: Sky1,
     img2: Sky2,
+  },
+  {
+    projectName: "Sweepy Maid",
+    projectDescription:
+      "Professional and Quality Home Cleaning Service Company in Vancouver",
+    img1: A1,
+    img2: A2,
+  },
+  {
+    projectName: "Pho 68",
+    projectDescription:
+      "Vietnamese cuisine features a unique blend of five fundamental tastes, with each dish offering distinct flavors. Common ingredients include shrimp paste, fish sauce, rice, fresh herbs, fruits, and vegetables.",
+    img1: B1,
+    img2: B2,
+  },
+  {
+    projectName: "HAVELI BISTRO",
+    projectDescription:
+      "Indulge in a culinary journey at Haveli Bistro, where each dish blends traditional Indian flavors with modern flair. Our diverse menu promises mouth-watering dishes for every occasion.",
+    img1: C1,
+    img2: C2,
+  },
+  {
+    projectName: "PRATHA 2 PASTA",
+    projectDescription:
+      "We use the best quality, natural & local ingredients in our dishes. ",
+    img1: D1,
+    img2: D2,
+  },
+  {
+    projectName: "DELIGHT BITE",
+    projectDescription:
+      "your ultimate destination for Best Indian Food in Coquitlam. Delight Bite is the Best Indian Restaurant in Coquitlam.",
+    img1: E1,
+    img2: E2,
+  },
+  {
+    projectName: "IMSU",
+    projectDescription:
+      "Helping Immigration Firms grow consistently through innovative approaches, proven strategies & consistent results.",
+    img1: F1,
+    img2: F2,
+  },
+  {
+    projectName: "Convertithub",
+    projectDescription:
+      "Convert It Hub will help you build a guaranteed client aquisition system so you don’t have to rely on expensive lead providers to survive.",
+    img1: G1,
+    img2: G2,
+  },
+  {
+    projectName: "WebAbility",
+    projectDescription:
+      "Your Ultimate Web Accessibility Widget for ADA & WCAG Compliance",
+    img1: H1,
+    img2: H2,
+  },
+  {
+    projectName: "MISSION DRIVING SCHOOL",
+    projectDescription:
+      "Your journey towards safe driving starts with Mission Driving School",
+    img1: I1,
+    img2: I2,
+  },
+  {
+    projectName: "RAFFLES EDUCITY",
+    projectDescription:
+      "Providing award-winning immigration services for over a decade with expert legal solutions tailored to meet our clients' needs in a fast-evolving industry.",
+    img1: J1,
+    img2: J2,
   },
 ];
 
@@ -119,7 +210,7 @@ function page() {
             {Project.map((props, index) => (
               <div
                 key={index}
-                className="flex flex-col-reverse md:flex-row gap-10 py-10 items-center border-t-2 border-blue-500"
+                className="flex flex-col-reverse md:flex-row gap-10 py-10 items-center border-t-2 border-purple-500"
               >
                 <div className="w-full md:w-1/3 flex flex-col gap-4">
                   <h1 className="text-4xl font-bold text-blue-500">
@@ -138,13 +229,13 @@ function page() {
                   </a> */}
                 </div>
                 <div className="flex flex-col md:flex-row gap-4">
-                  <div className="border rounded-[12px] pt-6 pl-6 overflow-hidden w-full md:w-96 bg-gray-800 shadow-md">
+                  <div className="border rounded-[8px] h-56 overflow-hidden w-full md:w-96 bg-blue-600 shadow-md">
                     <Image
                       src={props.img1}
                       width={1000}
                       height={1000}
                       alt="project image"
-                      className="w-full md:w-96 rounded border"
+                      className="w-full md:w-96 mt-4 ml-4 rounded "
                     />
                   </div>
                   <Image
@@ -152,7 +243,7 @@ function page() {
                     width={1000}
                     height={1000}
                     alt="project image"
-                    className="w-full md:w-96 rounded-[10px] shadow-md border"
+                    className="w-full md:w-96 rounded-[8px] shadow-md border"
                   />
                 </div>
               </div>

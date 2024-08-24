@@ -93,14 +93,13 @@ export default function Home() {
               <>
                 <div className=" flex flex-col lg:flex-row justify-between md:px-10 gap-6 border-t-2 pt-8  text-start px-5">
                   <div className="w-full md:w-1/4">
-                    <h1 className="text-base md:text-lg font-bold text-white">
-                      Digital Innovation Partner
+                    <h1 className="text-base md:text-2xl font-bold text-white">
+                      At Tecklo
                     </h1>
                   </div>
                   <div className="w-full md:w-3/4">
-                    <h4 className="text-xl font-bold leading-[28px] md:text-6xl text-white">
-                      Tecklo is a digital agency. We help ambitious brands
-                      become digital leaders.
+                    <h4 className="text-xl font-bold leading-[28px] md:text-5xl text-white">
+                      We Transform Your IT Challenges into Seamless Solutions
                     </h4>
                   </div>
                 </div>
@@ -120,23 +119,7 @@ export default function Home() {
       </section>
      
 
-     <section className="py-20">
-        <div className=" flex flex-col lg:flex-row justify-between md:px-10 gap-6  pt-8  text-start px-5">
-          <div className="w-full md:w-1/4">
-            <h1 className="text-base md:text-lg font-bold text-black">
-              Digital Innovation Partner
-            </h1>
-          </div>
-          <div className="w-full md:w-3/4">
-            <h4 className="text-xl font-bold leading-[28px] md:text-6xl text-black">
-              Tecklo is a digital agency. We help ambitious brands
-              become digital leaders.
-            </h4>
-          </div>
-        </div>
-      <Hero />
-     </section>
-
+     
       <Fade direction="right" >
         <section className="">
           <div className="relative isolate overflow-hidden bg-blue-100 py-24 sm:py-32">
@@ -178,6 +161,12 @@ export default function Home() {
           </div>
         </section>
       </Fade>
+
+      <section className="py-10  overflow-hidden    bg-gradient-to-tr   from-[#7240bdab] to-[#00276bc2] ">
+
+        <Hero />
+      </section>
+
 
       <Fade direction="up" >
         <section className="py-5 md:py-8">
