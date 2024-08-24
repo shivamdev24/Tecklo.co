@@ -70,7 +70,7 @@ const Project = [
     img2: C2,
   },
   {
-    projectName: "PRATHA 2 PASTA",
+    projectName: "PARATHA 2 PASTA",
     projectDescription:
       "We use the best quality, natural & local ingredients in our dishes. ",
     img1: D1,
