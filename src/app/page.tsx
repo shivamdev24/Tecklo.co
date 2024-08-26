@@ -22,6 +22,8 @@ import { Fade } from "react-awesome-reveal";
 import ServiceComponentHome from "@/components/ServiceComponentHome";
 import Hero from "@/components/Hero/Hero";
 import dynamic from "next/dynamic";
+import HeroImg from "../../public/HeroImg.png"
+
 
 
 const BackgroundBeams = dynamic(() => import('@/components/ui/background-beams'))
@@ -86,7 +88,7 @@ export default function Home() {
 
   return (
     <main className="">
-      <section>
+      {/* <section>
         <div className="flex flex-col overflow-hidden -mt-16   bg-gradient-to-tr   from-[#7240bddd] to-[#00276be3]   ">
           <ContainerScroll
             titleComponent={
@@ -116,9 +118,48 @@ export default function Home() {
             />
           </ContainerScroll>
         </div>
-      </section>
+      </section> */}
      
+      <section className='overflow-hidden     bg-gradient-to-tr   from-[#7240bd] to-[#00276b] '>
+        <div className='bg-grid-white/[0.2] h-[70vh] w-full relative flex justify-center px-5'>
+          <div className="absolute pointer-events-none inset-0 flex items-center justify-center  bg-gradient-to-tr   from-[#7240bd] to-[#00276b] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        <div className='flex flex-col-reverse md:flex-row justify-centre  md:justify-evenly text-start max-w-7xl mx-auto py-10 items-center z-20'>
+            <div className=" flex flex-col mt-4 md:mt-0">
+              <div className="w-full ">
+                <h1 className="text-base md:text-2xl font-bold text-white">
+                 Our Mission
+                </h1>
+              </div>
+              <div className="w-full mt-4">
+                <h4 className="text-xl font-bold leading-[28px] md:text-5xl text-white">
+                  We Transform Your IT Challenges into Seamless Solutions
+                </h4>
+              </div>
+            </div>
+            <Image src={HeroImg} width={1000} height={1000} className=' hover:scale-105  duration-500' alt="HeroImg" />  </div>
+        </div>
+        {/* <Image src={HeroImg} width={1000} height={1000} className=' hover:scale-105  duration-500' alt="HeroImg" /> */}
+        
 
+</section>
+      {/* <section className='overflow-hidden h-[70vh] flex justify-center   bg-gradient-to-tr   from-[#7240bd] to-[#00276b] '>
+  <div className='flex flex-col md:flex-row justify-evenly max-w-7xl mx-auto py-10 items-center'>
+          <div className=" flex flex-col ">
+            <div className="w-full ">
+              <h1 className="text-base md:text-2xl font-bold text-white">
+                At Tecklo
+              </h1>
+            </div>
+            <div className="w-full mt-4">
+              <h4 className="text-xl font-bold leading-[28px] md:text-5xl text-white">
+                We Transform Your IT Challenges into Seamless Solutions
+              </h4>
+            </div>
+          </div>
+        <Image src={HeroImg} width={1000} height={1000} className=' hover:scale-105  duration-500' alt="HeroImg" />
+  </div>
+
+</section> */}
      
       <Fade direction="right" >
         <section className="">
@@ -267,7 +308,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="flex gap-4"><p className="text-7xl font-bold   ">USA</p>
-                  <span className="content__number">03</span></div>
+                  <span className="content__number">02</span></div>
               </div>
             </Fade>
           </div>

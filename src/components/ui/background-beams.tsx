@@ -86,8 +86,8 @@ import { cn } from "@/lib/utils";
               key={`path-` + index}
               d={path}
               stroke={`url(#linearGradient-${index})`}
-              strokeOpacity="0.4"
-              strokeWidth="0.5"
+              strokeOpacity="0.9"
+              strokeWidth="0.9"
             ></motion.path>
           ))}
           <defs>
@@ -111,7 +111,7 @@ import { cn } from "@/lib/utils";
                   duration: Math.random() * 20 + 20,
                   ease: "easeInOut",
                   repeat: Infinity,
-                  delay: Math.random() * 20,
+                  delay: Math.random() * 10,
                 }}
               >
                 <stop stopColor="#18CCFC" stopOpacity="0"></stop>
