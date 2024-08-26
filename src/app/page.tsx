@@ -119,29 +119,31 @@ export default function Home() {
           </ContainerScroll>
         </div>
       </section> */}
-     
-      <section className='overflow-hidden     bg-gradient-to-tr   from-[#7240bd] to-[#00276b] '>
-        <div className='bg-grid-white/[0.2] h-full md:h-[70vh] w-full relative flex justify-center px-5'>
-          <div className="absolute pointer-events-none inset-0 flex items-center justify-center  bg-gradient-to-tr   from-[#7240bd] to-[#00276b] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-        <div className='flex flex-col-reverse md:flex-row justify-centre  md:justify-evenly text-start max-w-7xl mx-auto py-20 items-center z-20'>
-            <div className=" flex flex-col mt-4 md:mt-0">
-              <div className="w-full ">
-                <h1 className="text-base md:text-2xl font-bold text-white">
-                 Our Mission
-                </h1>
-              </div>
-              <div className="w-full mt-4">
-                <h4 className="text-xl font-bold leading-[28px] md:text-5xl text-white">
-                  We Transform Your IT Challenges into Seamless Solutions
-                </h4>
-              </div>
-            </div>
-            <Image src={HeroImg} width={1000} height={1000} className=' hover:scale-105  duration-500' alt="HeroImg" />  </div>
-        </div>
-        {/* <Image src={HeroImg} width={1000} height={1000} className=' hover:scale-105  duration-500' alt="HeroImg" /> */}
-        
 
-</section>
+      <section className='overflow-hidden     bg-gradient-to-tr   from-[#7240bd] to-[#00276b] '>
+        <Fade direction="up">
+          <div className='bg-grid-white/[0.2] h-[60vh] md:h-[80vh] w-full relative flex justify-center items-center px-5'>
+            <div className="absolute pointer-events-none inset-0 flex items-center justify-center  bg-gradient-to-tr   from-[#7240bd] to-[#00276b] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+            <div className='flex flex-col-reverse md:flex-row justify-centre  md:justify-evenly text-start max-w-7xl mx-auto py-20 items-center z-20'>
+              <div className=" flex flex-col mt-4 md:mt-0">
+                <div className="w-full ">
+                  <h1 className="text-base md:text-2xl font-bold text-white">
+                    Our Mission
+                  </h1>
+                </div>
+                <div className="w-full mt-4">
+                  <h4 className="text-xl font-bold leading-[28px] md:text-5xl text-white">
+                    We Transform Your IT Challenges into Seamless Solutions
+                  </h4>
+                </div>
+              </div>
+              <Image src={HeroImg} width={1000} height={1000} className=' hover:scale-105  duration-500' alt="HeroImg" />  </div>
+          </div>
+        </Fade>
+        {/* <Image src={HeroImg} width={1000} height={1000} className=' hover:scale-105  duration-500' alt="HeroImg" /> */}
+
+
+      </section>
       {/* <section className='overflow-hidden h-[70vh] flex justify-center   bg-gradient-to-tr   from-[#7240bd] to-[#00276b] '>
   <div className='flex flex-col md:flex-row justify-evenly max-w-7xl mx-auto py-10 items-center'>
           <div className=" flex flex-col ">
@@ -160,7 +162,7 @@ export default function Home() {
   </div>
 
 </section> */}
-     
+
       <Fade direction="right" >
         <section className="">
           <div className="relative isolate overflow-hidden bg-blue-100 py-24 sm:py-32">
@@ -222,7 +224,7 @@ export default function Home() {
                 What We Offer.
               </h1>
             </Fade>
-          
+
 
             <div className="px-5 max-w-7xl mx-auto  ">
               <ServiceComponentHome />
@@ -249,7 +251,7 @@ export default function Home() {
             <div className="max-w-7xl mx-auto flex flex-wrap justify-center  items-center gap-4 px-5">
               {WhyChooseUs.map((service, index) => {
                 return (
-                  <Fade direction="up"  key={index}>
+                  <Fade direction="up" key={index}>
                     <Card className="border h-[25vh] lg:h-[25vh] w-[80vw] sm:h-[10vh] md:w-[23vw] lg:w-[20vw] flex flex-col justify-center items-center rounded bg-white hover:scale-105 hover:shadow-lg bg-gradient-to-tl from-[#92a2f367] to-[#ea34652c]">
                       <CardHeader className="text-center">
                         <CardTitle className="text-blue-600">
@@ -259,7 +261,7 @@ export default function Home() {
                           {service.description}
                         </CardDescription>
                       </CardHeader>
-                    
+
                     </Card>
                   </Fade>
                 );
@@ -294,7 +296,7 @@ export default function Home() {
                 </div>
               </div>
             </Fade>
-          
+
             <Fade direction="up" >
               <div className=" flex align-center gap-4">
                 <div>
@@ -317,7 +319,7 @@ export default function Home() {
       </section>
 
 
-     
+
     </main>
   );
 }
