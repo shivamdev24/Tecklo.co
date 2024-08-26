@@ -123,7 +123,7 @@ export default function Home() {
       <section className='overflow-hidden     bg-gradient-to-tr   from-[#7240bd] to-[#00276b] '>
         <div className='bg-grid-white/[0.2] h-full md:h-[70vh] w-full relative flex justify-center px-5'>
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center  bg-gradient-to-tr   from-[#7240bd] to-[#00276b] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-        <div className='flex flex-col-reverse md:flex-row justify-centre  md:justify-evenly text-start max-w-7xl mx-auto pb-10 items-center z-20'>
+        <div className='flex flex-col-reverse md:flex-row justify-centre  md:justify-evenly text-start max-w-7xl mx-auto py-20 items-center z-20'>
             <div className=" flex flex-col mt-4 md:mt-0">
               <div className="w-full ">
                 <h1 className="text-base md:text-2xl font-bold text-white">
