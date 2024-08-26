@@ -132,7 +132,7 @@ export default function Home() {
                   </h1>
                 </div>
                 <div className="w-full mt-4">
-                  <h4 className="text-xl font-bold leading-[28px] md:text-5xl text-white">
+                  <h4 className="text-2xl font-bold leading-[28px] md:text-5xl text-white">
                     We Transform Your IT Challenges into Seamless Solutions
                   </h4>
                 </div>
