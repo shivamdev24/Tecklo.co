@@ -205,7 +205,7 @@ function page() {
           <h1 className="text-gray-700 font-bold text-4xl lg:text-6xl text-center ">
             A glimpse into <br /> our <span className="text-purple-500">projects</span>
           </h1>
-          <h2 className='mt-4 text-base text-gray-500'>Here&apos;s a glimpse of the remarkable web applications we&apos;ve launched recently.</h2>
+          <h2 className='mt-4 text-base text-center text-gray-500'>Here&apos;s a glimpse of the remarkable web applications we&apos;ve launched recently.</h2>
         </div>
       </section>
       <section>
