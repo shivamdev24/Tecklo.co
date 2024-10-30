@@ -7,11 +7,13 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
+import Link from "next/link";
 
 interface Service {
     title: string;
     description: string;
     img?: string;
+    link?: string;
 }
 
 interface ServiceCardProps {
@@ -20,6 +22,7 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ services }) => {
     const [visibleDescriptionIndex, setVisibleDescriptionIndex] = useState<number | null>(null);
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     const toggleDescription = (index: number) => {
         setVisibleDescriptionIndex(visibleDescriptionIndex === index ? null : index);
@@ -34,16 +37,18 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ services }) => {
     }, [visibleDescriptionIndex]);
 
     return (
-        <div className="flex flex-wrap items-center justify-center gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
             {services.map((service, index) => {
                 const isVisible = visibleDescriptionIndex === index;
+                const isBlurred = hoveredIndex !== null && hoveredIndex !== index;
 
                 return (
-                    <Fade direction="up" triggerOnce key={index}>
+                    <Fade direction="up" key={index}>
                         <Card
                             aria-expanded={isVisible}
-                            className={`relative border flex flex-col justify-center items-center rounded-[8px] overflow-hidden bg-white hover:scale-105 hover:shadow-lg hover:shadow-gray-400 hover:border-blue-500 transform transition-all duration-500 ease-in-out w-[90vw] sm:w-[30vw] xl:w-[20vw] ${isVisible ? "lg:h-[20rem] xl:h-[22rem] py-10" : "h-40"
-                                }`}
+                            className={`h-auto lg:h-[62vh] transition-all rounded shadow-md overflow-hidden duration-300 ${isBlurred ? "blur-lg" : ""}`}
+                            onMouseEnter={() => setHoveredIndex(index)}
+                            onMouseLeave={() => setHoveredIndex(null)}
                             onClick={() => toggleDescription(index)}
                         >
                             {service.img && (
@@ -52,19 +57,25 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ services }) => {
                                     alt={service.title}
                                     width={1000}
                                     height={1000}
-                                    className="absolute w-full h-full top-0 left-0 object-cover z-0"
+                                    className="w-full h-[40vh] top-0 left-0 object-cover z-0"
                                 />
                             )}
-                            <div className="absolute w-full h-full top-0 left-0 bg-black opacity-60 z-5"></div>
-                            <CardHeader className="relative text-start p-4 z-10">
-                                <CardTitle className="text-white text-center text-3xl">{service.title}</CardTitle>
+                            <CardHeader className="text-start p-4 z-10">
+                                <CardTitle className="text-start text-purple-500 uppercase text-xl">
+                                    {service.title}
+                                </CardTitle>
                             </CardHeader>
 
-                            {isVisible && (
-                                <CardContent className="relative text-white text-base font-medium text-start px-4 z-10">
-                                    {service.description}
-                                </CardContent>
-                            )}
+                            <CardContent className="relative text-xs text-start px-4 z-10">
+                                {service.description}
+                            </CardContent>
+                            <CardContent className="relative text-sm text-start px-4 z-10">
+                                {service.link && (
+                                    <Link className="bg-purple-500 p-2 text-white  hover:bg-purple-600 rounded" href={service.link}>
+                                        Read More...
+                                    </Link>
+                                )}
+                            </CardContent>
                         </Card>
                     </Fade>
                 );
@@ -74,8 +85,3 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ services }) => {
 };
 
 export default ServiceCard;
-
-
-
-
-

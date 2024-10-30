@@ -2,33 +2,33 @@ import Image from 'next/image';
 import React from 'react'
 
 
-import Sky1 from '../../../public/images/sk1.png'
-import Sky2 from '../../../public/images/sk2.png'
-import St1 from '../../../public/images/st1.png'
-import St2 from '../../../public/images/st2.png'
-import Wd1 from '../../../public/images/wd1.png'
-import Wd2 from '../../../public/images/wd2.png'
+import Sky1 from '@/assets/images/sk1.png'
+import Sky2 from '@/assets/images/sk2.png'
+import St1 from '@/assets/images/st1.png'
+import St2 from '@/assets/images/st2.png'
+import Wd1 from '@/assets/images/wd1.png'
+import Wd2 from '@/assets/images/wd2.png'
 
-import A1 from '../../../public/images/A1.png'
-import A2 from '../../../public/images/A2.png'
-import B1 from '../../../public/images/B1.png'
-import B2 from '../../../public/images/B2.png'
-import C1 from '../../../public/images/C1.png'
-import C2 from '../../../public/images/C2.png'
-import D1 from '../../../public/images/D1.png'
-import D2 from '../../../public/images/D2.png'
-import E1 from '../../../public/images/E1.png'
-import E2 from '../../../public/images/E2.png'
-import F1 from '../../../public/images/F1.png'
-import F2 from '../../../public/images/F2.png'
-import G1 from '../../../public/images/G1.png'
-import G2 from '../../../public/images/G2.png'
-import H1 from '../../../public/images/H1.png'
-import H2 from '../../../public/images/H2.png'
-import I1 from '../../../public/images/I1.png'
-import I2 from '../../../public/images/I2.png'
-import J1 from '../../../public/images/J1.png'
-import J2 from '../../../public/images/J2.png'
+import A1 from '@/assets/images/A1.png'
+import A2 from '@/assets/images/A2.png'
+import B1 from '@/assets/images/B1.png'
+import B2 from '@/assets/images/B2.png'
+import C1 from '@/assets/images/C1.png'
+import C2 from '@/assets/images/C2.png'
+import D1 from '@/assets/images/D1.png'
+import D2 from '@/assets/images/D2.png'
+import E1 from '@/assets/images/E1.png'
+import E2 from '@/assets/images/E2.png'
+import F1 from '@/assets/images/F1.png'
+import F2 from '@/assets/images/F2.png'
+import G1 from '@/assets/images/G1.png'
+import G2 from '@/assets/images/G2.png'
+import H1 from '@/assets/images/H1.png'
+import H2 from '@/assets/images/H2.png'
+import I1 from '@/assets/images/I1.png'
+import I2 from '@/assets/images/I2.png'
+import J1 from '@/assets/images/J1.png'
+import J2 from '@/assets/images/J2.png'
 
 
 
@@ -201,10 +201,11 @@ function page() {
             </defs>
           </svg>
         </div>
-        <div className="justify-center items-center flex h-full">
-          <h1 className="text-gray-700 font-bold text-4xl text-center ">
-            A glimpse into our <span className="text-blue-500">projects</span>
+        <div className="justify-center max-w-5xl mx-auto items-center flex flex-col h-full">
+          <h1 className="text-gray-700 font-bold text-4xl lg:text-6xl text-center ">
+            A glimpse into <br /> our <span className="text-purple-500">projects</span>
           </h1>
+          <h2 className='mt-4 text-base text-gray-500'>Here&apos;s a glimpse of the remarkable web applications we&apos;ve launched recently.</h2>
         </div>
       </section>
       <section>
@@ -216,7 +217,7 @@ function page() {
                 className="flex flex-col-reverse md:flex-row gap-10 py-10 items-center border-t-2 border-purple-500"
               >
                 <div className="w-full md:w-1/3 flex flex-col gap-4">
-                  <h1 className="text-4xl font-bold text-blue-500">
+                  <h1 className="text-4xl font-bold text-purple-500">
                     {props.projectName}
                   </h1>
                   <p className="text-base text-gray-600">

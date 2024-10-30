@@ -2,12 +2,15 @@
 
 import React from "react";
 import { Fade } from "react-awesome-reveal";
+import { ArrowsUpFromLine, BetweenHorizontalStart, Link, LoaderPinwheel, Pickaxe, Pyramid } from "lucide-react";
+import { Button } from "./ui/button";
 
 function page() {
   return (
     <>
-      <section className=" overflow-hidden h-80 relative">
-        <div className=" ">
+      <section className=" overflow-hidden h-[70vh] relative">
+        
+        <div className="-z-20 ">
           <svg
             aria-hidden="true"
             className="absolute inset-x-0 -top-20 -z-10 h-[1000px] w-full fill-neutral-50 stroke-neutral-900/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
@@ -59,12 +62,14 @@ function page() {
             </defs>
           </svg>
         </div>
-        <div className="justify-center items-center flex flex-col gap-4 h-full px-5">
+        <div className="justify-center max-w-5xl z-[10]  mx-auto items-center flex flex-col gap-4 h-full px-5">
           <Fade direction="down">
-            <h1 className="text-gray-700 font-bold text-4xl text-center ">
-              Welcome to <span className="text-blue-500">Tecklo</span>
+            <h1 className="text-gray-700 font-bold text-4xl lg:text-7xl text-center ">
+              Welcome to <span className="text-purple-500">Tecklo</span>
             </h1>
-            <p className="text-base font-medium text-gray-600 text-center max-w-7xl mx-auto">
+
+            
+            <p className="text-base lg:text-lg font-medium text-gray-600 text-center max-w-7xl mx-auto">
               Where innovation meets diversity in the heart of Canada.
               We&apos;re not just a tech startup. we&apos;re the backbone of
               creativity and expertise, driven by a team of exceptional minds
@@ -72,13 +77,67 @@ function page() {
             </p>
           </Fade>
         </div>
+        <div className="h-[70vh] w-full -z-10  bg-gradient-to-b from-transparent to-purple-500/[0.2] absolute top-0 left-0"></div>
       </section>
-      <section className="border-t py-10 px-5">
-        <div className="max-w-7xl mx-auto flex flex-col gap-5">
+      <section className=" py-10 px-5">
+        <div className="max-w-5xl mx-auto flex flex-col gap-5">
           <Fade direction="up">
-            <h1 className="text-blue-500 text-4xl font-bold  underline">
+            <h1 className="text-purple-500 text-4xl font-bold text-center ">
               About Us
             </h1>
+          </Fade>
+          <Fade direction="up">
+            <p className="text-base text-gray-800">
+              <span>
+                Welcome to Tecklo.co, your trusted partner in digital solutions. We specialize in helping businesses of all sizes enhance their online presence and achieve their goals. With a dedicated team of experts in design, development, and marketing, we offer a comprehensive range of services tailored to meet your unique needs.
+              </span>
+
+              <br />
+              <br />
+              <span>
+                Located in Canada and the US, we blend local insights with global expertise to deliver high-quality results that drive success. Whether you&apos;re launching a start up or looking to improve your existing digital strategies, we are committed to providing innovative solutions that foster growth and engagement. At Tecklo, we believe in building strong relationships with our clients, ensuring you have the support you need every step of the way.
+              </span>
+              <br />
+              <br />
+              <span>
+                Let&apos;s work together to take your business to new heights in the digital landscape.
+              </span>
+            </p>
+          </Fade>
+          <Fade direction="up">
+
+            <div className="flex flex-col max-w-6xl mx-auto gap-5 justify-center ">
+              <section className=" bg-light p-5 text-gray-800">
+                <h2 className="text-center text-2xl font-bold ">Our Approach</h2>
+                <h3 className="pb-10 text-center text-sm">Tailored Solutions for Every Business</h3>
+                <div className="row">
+                  <div className="col-md-6 text-base">
+                    <p>At tecklo, we prioritize understanding each client’s unique needs to deliver custom-fit digital solutions. Our team combines expert craftsmanship with a client-first mentality, ensuring that every project is tailored specifically to your business goals. By using Agile Methodology, we remain flexible and adaptable, allowing us to adjust quickly to changes while maintaining continuous improvement throughout the project lifecycle.
+                    </p>
+                    <br />
+                    <p>From start-ups to established businesses, we provide end-to-end guidance, ensuring that you’re supported from the initial planning stages through to long-term maintenance. Our services—from Graphic Design to Web Infrastructure, SEO, and Digital Marketing—are backed by data-driven strategies, ensuring measurable results that matter.
+
+                    </p><br />
+                    <p>With offices in Canada and the US, we bring local expertise and a global vision to your business, helping you grow both locally and internationally. Our mission is to build lasting partnerships, providing solutions that empower businesses to thrive in the digital world.
+                    </p>
+                    <ul className="flex flex-col gap-2 mt-4 font-semibold ">
+                      <li className="flex gap-2"><LoaderPinwheel className="text-purple-400" /> <span>Client-Centric Focus: Understanding unique needs.</span></li>
+                      <li className="flex gap-2"><Pickaxe className="text-purple-400" /> <span>Expert Craftsmanship: Skilled team delivering quality.</span></li>
+                      <li className="flex gap-2"><ArrowsUpFromLine className="text-purple-400" /> <span>Agile Methodology: Flexibility and adaptability.</span></li>
+                      <li className="flex gap-2"><Pyramid className="text-purple-400" /> <span>End-to-End Guidance: Support from planning to maintenance.</span></li>
+                      <li className="flex gap-2"><BetweenHorizontalStart className="text-purple-400" /> <span>Data-Driven Strategies: Measurable results.</span></li>
+                    </ul>
+                    <p className="mt-2">With offices in Canada and the US, we bring local expertise and a global vision to your business, helping you grow both locally and internationally.</p>
+                    <Button asChild className="bg-white text-gray-900 rounded hover:bg-black mt-4 hover:text-white"><Link href="/service" >Explore Our Services</Link></Button>
+                  </div>
+
+                </div>
+              </section>
+
+
+
+
+            </div>
           </Fade>
           <Fade direction="up">
             <p>
@@ -91,8 +150,6 @@ function page() {
               tackle complex challenges and deliver solutions that exceed
               expectations.
             </p>
-          </Fade>
-          <Fade direction="up">
             <p>
               What sets us apart is our commitment to collaboration and
               inclusivity. We believe that the best ideas come from a diverse
@@ -104,10 +161,10 @@ function page() {
             </p>
           </Fade>
         </div>
-        <div className="max-w-7xl mx-auto mt-6 flex flex-col gap-5">
+        <div className="max-w-5xl mx-auto mt-6 flex flex-col gap-5">
           <Fade direction="up">
 
-          <h2 className="text-gray-800 text-2xl font-bold">Our Story</h2>
+          <h2 className="text-gray-800 text-2xl font-bold text-center">Our Story</h2>
           </Fade>
 <Fade direction="up">
 
@@ -134,14 +191,7 @@ function page() {
             together.
           </p>
 </Fade>
-<Fade direction="up">
 
-          <p>
-            <strong>
-              Welcome to Tecklo where we turn your imagination into reality.
-            </strong>
-          </p>
-</Fade>
         </div>
       </section>
     </>

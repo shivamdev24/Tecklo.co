@@ -172,7 +172,7 @@ import {
 } from "@/components/ui/sheet";
 import Link from "next/link";
 import Image from "next/image";
-import BrandImg from "../../public/TeckloLogo.png";
+import BrandImg from "@/assets/TeckloLogo.png";
 
 function Navbar() {
   return (

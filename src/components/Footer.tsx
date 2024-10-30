@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
-import Brand from "../../public/TeckloLogo.png";
+import Brand from "@/assets/TeckloLogo.png";
 
 function Footer() {
   return (

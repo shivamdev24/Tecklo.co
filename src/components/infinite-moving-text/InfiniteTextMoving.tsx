@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 function InfiniteTextMoving() {
   return (
     <div className="container">
