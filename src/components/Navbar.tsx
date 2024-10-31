@@ -177,7 +177,7 @@ import BrandImg from "@/assets/TeckloLogo.png";
 function Navbar() {
   return (
     <nav className="sticky top-0 w-full z-50">
-      <div className=" border bg-white border-blue-100 shadow-lg shadow-blue-200  ">
+      <div className=" border bg-white border-purple-100 shadow-lg shadow-purple-200  ">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-5 text-black py-3">
           <div className="relative">
             <Link href="/">
@@ -194,14 +194,14 @@ function Navbar() {
           <div className="hidden lg:block">
             <Menubar className="border-none bg-transparent gap-4 text-lg">
               <MenubarMenu>
-                <Link href="/" className="hover:text-blue-500 duration-500">
+                <Link href="/" className="hover:text-purple-500 duration-500">
                   Home
                 </Link>
               </MenubarMenu>
               <MenubarMenu>
                 <Link
                   href="/about"
-                  className="hover:text-blue-500 duration-500"
+                  className="hover:text-purple-500 duration-500"
                 >
                   About
                 </Link>
@@ -245,24 +245,24 @@ function Navbar() {
               <SheetContent className="w-56 bg-white">
                 <SheetHeader>
                   <div className="flex flex-col gap-4 mt-6 text-center">
-                    <Link href="/" className="hover:text-blue-500 duration-500">
+                    <Link href="/" className="hover:text-purple-500 duration-500">
                       Home
                     </Link>
                     <Link
                       href="/about"
-                      className="hover:text-blue-500 duration-500"
+                      className="hover:text-purple-500 duration-500"
                     >
                       About
                     </Link>
                     <Link
                       href="/service"
-                      className="hover:text-blue-500 duration-500"
+                      className="hover:text-purple-500 duration-500"
                     >
                       Service
                     </Link>
                     <Link
                       href="/work"
-                      className="hover:text-blue-500 duration-500"
+                      className="hover:text-purple-500 duration-500"
                     >
                       Our Work
                     </Link>

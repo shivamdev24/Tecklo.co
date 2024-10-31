@@ -342,7 +342,7 @@ export default function Home() {
             <div className="w-full  ">
             <Fade direction="left" >
 
-              <svg width="400" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" >
+              <svg width="330" height="300" className=" w-full" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" >
                 <text x="50%" y="40" font-size="24" font-weight="bold" fill="#333" text-anchor="middle">
                   Welcome to Tecklo.co
                 </text>
@@ -401,7 +401,7 @@ export default function Home() {
         </div>
       </section>
       <section className="py-8 relative flex flex-col items-center">
-        <h1 className="z-50 relative text-center font-bold text-2xl lg:text-4xl text-purple-600 py-10">Our Project</h1>
+        <h1 className="z-30 relative text-center font-bold text-2xl lg:text-4xl text-purple-600 py-10">Our Project</h1>
         <div className="absolute pointer-events-none inset-1 flex items-center justify-center  bg-gradient-to-tr   from-[#fff] to-purple-500/[.5] [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]"></div>
         <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto gap-5 px-5 lg:px-0 justify-center items-center">
           <div className="border w-full lg:w-[35vw] hover:scale-110  duration-500 rounded bg-white"> <Image
@@ -478,7 +478,7 @@ export default function Home() {
         <div>
           <div className="flex flex-col max-w-7xl mx-auto gap-5 justify-center items-center">
             <Fade direction="left" >
-              <h1 className="text-center py-10 font-bold text-xl md:text-4xl text-black">
+              <h1 className="text-center py-10 font-bold text-xl md:text-4xl text-purple-600">
                 Why Choose Us
               </h1>
             </Fade>

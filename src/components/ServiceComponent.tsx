@@ -300,7 +300,7 @@ function page() {
         <div className="max-w-7xl mx-auto  px-5 flex flex-col gap-4">
           <div>
             <Fade direction="left">
-              <h2 className="text-3xl text-center py-5 font-bold underline text-blue-500">
+              <h2 className="text-3xl text-center py-5 font-bold underline text-purple-500">
                 Our Services
               </h2>
             </Fade>

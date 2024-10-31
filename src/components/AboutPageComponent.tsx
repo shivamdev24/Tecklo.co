@@ -79,35 +79,34 @@ function page() {
         </div>
         <div className="h-[70vh] w-full -z-10  bg-gradient-to-b from-transparent to-purple-500/[0.2] absolute top-0 left-0"></div>
       </section>
-      <section className=" py-10 px-5">
-        <div className="max-w-5xl mx-auto flex flex-col gap-5">
-          <Fade direction="up">
+      <section className="max-w-6xl mx-auto py-10 px-5 flex flex-col  gap-5 justify-center">
+        <div className=" flex flex-col gap-5">
             <h1 className="text-purple-500 text-4xl font-bold text-center ">
               About Us
             </h1>
-          </Fade>
-          <Fade direction="up">
-            <p className="text-base text-gray-800">
-              <span>
-                Welcome to Tecklo.co, your trusted partner in digital solutions. We specialize in helping businesses of all sizes enhance their online presence and achieve their goals. With a dedicated team of experts in design, development, and marketing, we offer a comprehensive range of services tailored to meet your unique needs.
-              </span>
+          
+            <section >
+              <p className="text-base text-gray-800">
+                <span>
+                  Welcome to Tecklo.co, your trusted partner in digital solutions. We specialize in helping businesses of all sizes enhance their online presence and achieve their goals. With a dedicated team of experts in design, development, and marketing, we offer a comprehensive range of services tailored to meet your unique needs.
+                </span>
 
-              <br />
-              <br />
-              <span>
-                Located in Canada and the US, we blend local insights with global expertise to deliver high-quality results that drive success. Whether you&apos;re launching a start up or looking to improve your existing digital strategies, we are committed to providing innovative solutions that foster growth and engagement. At Tecklo, we believe in building strong relationships with our clients, ensuring you have the support you need every step of the way.
-              </span>
-              <br />
-              <br />
-              <span>
-                Let&apos;s work together to take your business to new heights in the digital landscape.
-              </span>
-            </p>
-          </Fade>
-          <Fade direction="up">
+                <br />
+                <br />
+                <span>
+                  Located in Canada and the US, we blend local insights with global expertise to deliver high-quality results that drive success. Whether you&apos;re launching a start up or looking to improve your existing digital strategies, we are committed to providing innovative solutions that foster growth and engagement. At Tecklo, we believe in building strong relationships with our clients, ensuring you have the support you need every step of the way.
+                </span>
+                <br />
+                <br />
+                <span>
+                  Let&apos;s work together to take your business to new heights in the digital landscape.
+                </span>
+              </p>
+           </section>
+           
 
-            <div className="flex flex-col max-w-6xl mx-auto gap-5 justify-center ">
-              <section className=" bg-light p-5 text-gray-800">
+            <div className="flex flex-col  gap-5 justify-center ">
+              <section className=" bg-light  text-gray-800">
                 <h2 className="text-center text-2xl font-bold ">Our Approach</h2>
                 <h3 className="pb-10 text-center text-sm">Tailored Solutions for Every Business</h3>
                 <div className="row">
@@ -138,35 +137,33 @@ function page() {
 
 
             </div>
-          </Fade>
-          <Fade direction="up">
-            <p>
-              <strong className="text-lg"> Our mission is simple:</strong> To
-              turn your business needs into reality with the most effective
-              technology solutions and a touch of brilliance. Our team is a
-              blend of visionaries, engineers, designers, and strategists, each
-              bringing their unique perspective and skill set to the table. This
-              rich tapestry of backgrounds and experiences fuels our ability to
-              tackle complex challenges and deliver solutions that exceed
-              expectations.
-            </p>
-            <p>
-              What sets us apart is our commitment to collaboration and
-              inclusivity. We believe that the best ideas come from a diverse
-              group of thinkers who are not afraid to push boundaries and
-              challenge the status quo. By fostering an environment where
-              creativity thrives and different viewpoints are celebrated, we
-              ensure that every project benefits from a wealth of perspectives
-              and innovative approaches.
-            </p>
-          </Fade>
+            
+            <section>
+              <p>
+                <strong className="text-lg"> Our mission is simple:</strong> To
+                turn your business needs into reality with the most effective
+                technology solutions and a touch of brilliance. Our team is a
+                blend of visionaries, engineers, designers, and strategists, each
+                bringing their unique perspective and skill set to the table. This
+                rich tapestry of backgrounds and experiences fuels our ability to
+                tackle complex challenges and deliver solutions that exceed
+                expectations.
+              </p>
+              <p>
+                What sets us apart is our commitment to collaboration and
+                inclusivity. We believe that the best ideas come from a diverse
+                group of thinkers who are not afraid to push boundaries and
+                challenge the status quo. By fostering an environment where
+                creativity thrives and different viewpoints are celebrated, we
+                ensure that every project benefits from a wealth of perspectives
+                and innovative approaches.
+              </p>
+            </section>
+            
         </div>
-        <div className="max-w-5xl mx-auto mt-6 flex flex-col gap-5">
-          <Fade direction="up">
-
+        <div className="max-w-6xl mx-auto mt-6 flex flex-col gap-5">
+         
           <h2 className="text-gray-800 text-2xl font-bold text-center">Our Story</h2>
-          </Fade>
-<Fade direction="up">
 
           <p>
             Based out of Canada, we are proud to harness the strengths of our
@@ -176,21 +173,19 @@ function page() {
             businesses achieve their goals and drive growth in a rapidly
             evolving digital landscape.
           </p>
-</Fade>
-<Fade direction="up">
+          
 
           <p>
             At Tecklo, we&apos;re more than just a team; we&apos;re a dream
             team, united by our passion for technology and our commitment.
           </p>
-</Fade>
-<Fade direction="up">
+          
 
           <p>
             Join us on this exciting journey, and let&apos;s build the future
             together.
           </p>
-</Fade>
+          
 
         </div>
       </section>
