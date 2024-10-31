@@ -339,39 +339,48 @@ export default function Home() {
             <Image src={AboutUs} width={1000} height={1000} alt="about" className="w-full h-80 border rounded  shadow-lg shadow-white absolute left-6 top-6" />
           </div> */}
           
+            <div className="w-full  ">
             <Fade direction="left" >
 
-            <svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" >
+              <svg width="400" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" >
+                <text x="50%" y="40" font-size="24" font-weight="bold" fill="#333" text-anchor="middle">
+                  Welcome to Tecklo.co
+                </text>
 
+                {/* <!-- Subtitle Text --> */}
+                <text x="50%" y="70" font-size="16" fill="#666" text-anchor="middle">
+                  Your Trusted Digital Partner
+                </text>
 
-              {/* <!-- Business Icons -->
+                {/* <!-- Business Icons -->
             <!-- Design Icon --> */}
-              <circle cx="150" cy="150" r="50" fill="#58C4DD" />
-              <text x="150" y="155" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Design</text>
+                <circle cx="150" cy="150" r="50" fill="#58C4DD" />
+                <text x="150" y="155" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Design</text>
 
-              {/* <!-- Development Icon --> */}
-              <circle cx="300" cy="150" r="50" fill="#6D72C3" />
-              <text x="300" y="155" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Development</text>
+                {/* <!-- Development Icon --> */}
+                <circle cx="300" cy="150" r="50" fill="#6D72C3" />
+                <text x="300" y="155" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Development</text>
 
-              {/* <!-- Marketing Icon --> */}
-              <circle cx="450" cy="150" r="50" fill="#FF8B60" />
-              <text x="450" y="155" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Marketing</text>
+                {/* <!-- Marketing Icon --> */}
+                <circle cx="450" cy="150" r="50" fill="#FF8B60" />
+                <text x="450" y="155" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Marketing</text>
 
-              {/* <!-- Global Expertise Section --> */}
-              <path d="M80 250 L520 250 L520 330 L80 330 Z" fill="#FFF4E1" stroke="#FFD27F" stroke-width="2" />
-              <text x="300" y="280" font-size="18" fill="#333" text-anchor="middle">
-                Local Knowledge & Global Expertise
-              </text>
-              <text x="300" y="305" font-size="14" fill="#666" text-anchor="middle">
-                Teams in Canada & US to Fuel Your Growth
-              </text>
-              {/* 
+                {/* <!-- Global Expertise Section --> */}
+                <path d="M80 250 L520 250 L520 330 L80 330 Z" fill="#FFF4E1" stroke="#FFD27F" stroke-width="2" />
+                <text x="300" y="280" font-size="18" fill="#333" text-anchor="middle">
+                  Local Knowledge & Global Expertise
+                </text>
+                <text x="300" y="305" font-size="14" fill="#666" text-anchor="middle">
+                  Teams in Canada & US to Fuel Your Growth
+                </text>
+                {/* 
             <!-- Bottom Message --> */}
-              <text x="50%" y="370" font-size="14" fill="#333" text-anchor="middle">
-                Let’s elevate your digital presence together!
-              </text>
-            </svg>
+                <text x="50%" y="370" font-size="14" fill="#333" text-anchor="middle">
+                  Let’s elevate your digital presence together!
+                </text>
+              </svg>
             </Fade>
+            </div>
 
           <div className="flex flex-col w-full  gap-5 justify-center ">
             <Fade direction="left" >
