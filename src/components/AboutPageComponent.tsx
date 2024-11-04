@@ -4,6 +4,78 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 import { ArrowsUpFromLine, BetweenHorizontalStart, Link, LoaderPinwheel, Pickaxe, Pyramid } from "lucide-react";
 import { Button } from "./ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
+
+
+
+
+const WhyChooseUs = [
+  {
+    title: "Custom-Fit Services",
+    description: "Tailored solutions designed specifically for your business.",
+    content: (
+      <ul className="flex flex-col gap-2">
+        <li><strong>1. Personalized Approach</strong> - We take the time to understand your business inside out, ensuring our services align with your specific needs.</li>
+        <li><strong>2. Flexible Solutions</strong> - Whether you’re a start-up or a growing business, we adapt our offerings to fit your stage and goals.</li>
+        <li><strong>3. Unique to You</strong> - We don’t believe in one-size-fits-all. Our solutions are crafted just for you, so you get the best results.</li>
+      </ul>
+    ),
+    footer: "Your business, your solutions",
+  },
+  {
+    title: "End-to-End Guidance",
+    description: "Supporting you from the beginning to long after launch.",
+    content: (
+      <ul className="flex flex-col gap-2">
+        <li><strong>1. From Start to Finish</strong> - We’re with you throughout the entire process, helping you from planning to execution.</li>
+        <li><strong>2. Clear Communication</strong> - You’ll always know what’s happening with your project, with regular updates and transparent communication.</li>
+        <li><strong>3. Ongoing Support</strong> - Even after your project is live, we continue to provide support, ensuring everything runs smoothly.</li>
+      </ul>
+    ),
+    footer: "Comprehensive support throughout",
+  },
+  {
+    title: "Results That Matter",
+    description: "Focusing on measurable outcomes to drive your business forward.",
+    content: (
+      <ul className="flex flex-col gap-2">
+        <li><strong>1. Goal-Oriented</strong> - We focus on outcomes that drive your business forward, like increased traffic, leads, or sales.</li>
+        <li><strong>2. Data-Driven Decisions</strong> - Our strategies are based on real data, ensuring that every move we make is designed to achieve success.</li>
+        <li><strong>3. Measurable Success</strong> - We provide clear reports and analytics, so you can see the tangible impact of our work.</li>
+      </ul>
+    ),
+    footer: "Success you can see and measure",
+  },
+  {
+    title: "Local Know-How, Global Vision",
+    description: "Blending local insights with a global strategy.",
+    content: (
+      <ul className="flex flex-col gap-2">
+        <li><strong>1. Expanding Your Reach</strong> - We help you tap into broader opportunities, whether you’re looking to grow locally or expand globally.</li>
+        <li><strong>2. Bridging Cultures</strong> - Our experience helps us blend local insights with a global perspective, creating strategies that work for diverse audiences.</li>
+      </ul>
+    ),
+    footer: "Think local, act global",
+  },
+  {
+    title: "Agile Methodology",
+    description: "Flexibility and adaptability for evolving projects.",
+    content: (
+      <ul className="flex flex-col gap-2">
+        <li><strong>1. Quick Adaptability</strong> - Using agile methodology, we can quickly adjust to changes in your project, ensuring we meet evolving needs and timelines.</li>
+        <li><strong>2. Continuous Improvement</strong> - Agile allows us to constantly refine and enhance the project as we progress, leading to better results with each iteration.</li>
+        <li><strong>3. Client Collaboration</strong> - With regular check-ins and feedback loops, you are always involved in the development process, ensuring the final product aligns with your vision.</li>
+      </ul>
+    ),
+    footer: "Flexibility at every step",
+  },
+];  
 
 function page() {
   return (
@@ -189,6 +261,37 @@ function page() {
 
         </div>
       </section>
+
+      <section className="py-10 ">
+        <div>
+          <div className="flex flex-col max-w-7xl mx-auto gap-5 justify-center items-center">
+            <Fade direction="left" >
+              <h1 className="text-center py-10 font-bold text-xl md:text-4xl text-purple-600">
+                Why Choose Us
+              </h1>
+            </Fade>
+            <div className="flex flex-col justify-between w-full max-w-4xl mx-auto gap-5   px-5">
+              {WhyChooseUs.map((service, index) => {
+                return (
+                  <Accordion key={index} type="single" collapsible>
+                    <AccordionItem value={`item-${index}`}>
+                      <AccordionTrigger className=" text-lg mb-2">{service.title}</AccordionTrigger>
+                      <AccordionContent>
+                        <p className="text-lg font-semibold">{service.description}</p>
+                        <div className="mt-2">{service.content}</div>
+                        <p className="mt-4 italic">{service.footer}</p>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+
+                );
+              })}
+
+            </div>
+          </div>
+        </div>
+      </section>
+
     </>
   );
 }

@@ -12,7 +12,7 @@ const ContactCTA = () => {
 
     return (
         <div className='bg-gradient-to-tr   from-[#766fffe8] to-[#00276b]'>
-            <div className="p-6  flex py-10 flex-col lg:flex-row justify-between items-center max-w-5xl mx-auto">
+            <div className="p-6  flex py-20 flex-col lg:flex-row justify-between items-center max-w-5xl mx-auto">
                 <div className='max-w-xl text-white mx-auto text-center lg:text-start'>
                     <h2 className="text-xl lg:text-5xl font-semibold mb-4">Get in Touch with Us!</h2>
                     <p className="mb-4 text-sm">
