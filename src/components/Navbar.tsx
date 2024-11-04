@@ -64,6 +64,14 @@ function Navbar() {
                   Our Work
                 </Link>
               </MenubarMenu>
+              <MenubarMenu>
+                <Link
+                  href="/our-team"
+                  className="hover:text-purple-500 duration-500 hidden md:block"
+                >
+                  Our Team
+                </Link>
+              </MenubarMenu>
             </Menubar>
           </div>
           <div className="lg:hidden bg-white">
@@ -107,6 +115,12 @@ function Navbar() {
                       className="hover:text-purple-500 duration-500"
                     >
                       Our Work
+                    </Link>
+                    <Link
+                      href="/our-team"
+                      className="hover:text-purple-500 duration-500"
+                    >
+                      Our Team
                     </Link>
                   
                   </div>

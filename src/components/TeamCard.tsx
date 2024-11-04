@@ -1,5 +1,6 @@
 // components/TeamCard.tsx
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import Image from "next/image";
 
 type TeamCardProps = {
     name: string;
@@ -11,9 +12,9 @@ type TeamCardProps = {
 };
 
 const TeamCard: React.FC<TeamCardProps> = ({ name, role, image, linkedin, twitter, github }) => (
-    <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition duration-300">
-        <img
-            className="w-24 h-24 rounded-full mx-auto object-cover"
+    <div className=" rounded p-6 text-center hover:shadow-2xl hover:border hover:rounded-2xl transition duration-300">
+        <Image width={1000} height={1000}
+            className="h-[40vh] w-full object-center lg:h-[60vh] lg:w-auto rounded  mx-auto object-cover"
             src={image}
             alt={`${name}'s photo`}
         />
