@@ -530,12 +530,12 @@ export default function Home() {
                 </div>
                 <div className="flex gap-3">
                   <p className="text-7xl font-bold   ">CAN</p>
-                  <span className="content__number">01</span>
+                  {/* <span className="content__number">01</span> */}
                 </div>
               </div>
             </Fade>
 
-            <Fade direction="up" >
+            {/* <Fade direction="up" >
               <div className=" flex align-center gap-4">
                 <div>
                   <Image
@@ -550,7 +550,7 @@ export default function Home() {
                 <div className="flex gap-4"><p className="text-7xl font-bold   ">USA</p>
                   <span className="content__number">02</span></div>
               </div>
-            </Fade>
+            </Fade> */}
           </div>
         </div>
         <BackgroundBeams className=" w-screen object-cover z-10" />

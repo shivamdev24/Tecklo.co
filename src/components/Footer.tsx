@@ -34,7 +34,7 @@ function Footer() {
         <div className="mt-4 md:mt-0">
           <h1 className="font-bold text-lg">Get In Touch</h1>
           <div>
-            <p>Contact No : +1 (604) 206-0777</p>
+            <p>Contact No : +1 (236) 238-1642</p>
             <p>
               Email : <a href="mailto:admin@tecklo.com">admin@tecklo.co</a>
             </p>

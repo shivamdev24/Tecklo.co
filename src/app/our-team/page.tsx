@@ -3,45 +3,26 @@ import TeamCard from "@/components/TeamCard";
 
 const teamMembers = [
     {
-        name: "Alice Johnson",
+        name: "Uddashay Arora",
         role: "CEO & Founder",
         image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlJTIwcHJvZmVzc2lvbmFsfGVufDB8fDB8fHww",
         linkedin: "https://linkedin.com/",
         twitter: "https://twitter.com/",
         github: "https://github.com/",
+        number: "+1 (236) 238-1642",
+        location: "British Columbia - West"
     },
     {
-        name: "Bob Smith",
-        role: "Lead Developer",
+        name: "Prabhakar",
+        role: "Territory Manager",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVvcGxlJTIwcHJvZmVzc2lvbmFsfGVufDB8fDB8fHww",
         linkedin: "https://linkedin.com/",
         twitter: "https://twitter.com/",
         github: "https://github.com/",
+        number: "+1 (250) 797-2237",
+        location: "Vancouver Island"
     },
-    {
-        name: "Bob Smith",
-        role: "Lead Developer",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVvcGxlJTIwcHJvZmVzc2lvbmFsfGVufDB8fDB8fHww",
-        linkedin: "https://linkedin.com/",
-        twitter: "https://twitter.com/",
-        github: "https://github.com/",
-    },
-    {
-        name: "Bob Smith",
-        role: "Lead Developer",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVvcGxlJTIwcHJvZmVzc2lvbmFsfGVufDB8fDB8fHww",
-        linkedin: "https://linkedin.com/",
-        twitter: "https://twitter.com/",
-        github: "https://github.com/",
-    },
-    {
-        name: "Bob Smith",
-        role: "Lead Developer",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVvcGxlJTIwcHJvZmVzc2lvbmFsfGVufDB8fDB8fHww",
-        linkedin: "https://linkedin.com/",
-        twitter: "https://twitter.com/",
-        github: "https://github.com/",
-    },
+    
     // Add more team members as needed
 ];
 
@@ -115,7 +96,7 @@ const TeamPage = () => (
         </section>
         <section className=" min-h-screen py-12">
 
-            <div className="max-w-5xl mx-auto px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto px-6 lg:px-8">
                 <div className="grid gap-8 grid-cols-1 md:grid-cols-2 ">
                     {teamMembers.map((member, index) => (
                         <TeamCard key={index} {...member} />
