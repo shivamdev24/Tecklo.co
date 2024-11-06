@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 const ContactCTA = () => {
     const handleCall = () => {
-        window.location.href = 'tel:+16042060777';
+        window.location.href = 'tel:+1 (236) 238-1642';
     };
 
     const handleEmail = () => {
@@ -27,7 +27,7 @@ const ContactCTA = () => {
                         className="bg-green-500 text-white font-bold py-2 px-4 rounded transition duration-200 hover:bg-green-600 flex items-center"
                     >
                         <FaPhoneAlt className="mr-2" />
-                        Call Us: +1 (604) 206-0777
+                        Call Us: +1 (236) 238-1642
                     </button>
                     <button
                         onClick={handleEmail}
