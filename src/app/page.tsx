@@ -389,7 +389,7 @@ export default function Home() {
               width={1000}
               height={1000}
               alt="about"
-              className="w-full lg:w-[35vw] h-72 border rounded-t  hover:rounded  object-cover shadow-lg shadow-white transform   z-50 "
+              className="w-full lg:w-[35vw] md:h-72 border rounded-t  hover:rounded  object-contain md:object-cover shadow-lg shadow-white transform   z-50 "
             />
               <p className="font-bold text-purple-500 text-lg text-start p-3">Sweepy Maid</p>
             </div>
@@ -400,7 +400,7 @@ export default function Home() {
               width={1000}
               height={1000}
               alt="about"
-              className="w-full lg:w-[35vw] h-72 border rounded-t  hover:rounded object-cover shadow-lg shadow-white transform   z-50 "
+              className="w-full lg:w-[35vw] md:h-72 border rounded-t  hover:rounded object-contain md:object-cover shadow-lg shadow-white transform   z-50 "
             />
               <p className="font-bold text-purple-500 text-lg text-start p-3">Pho 68</p>
             </div>
@@ -411,7 +411,7 @@ export default function Home() {
               width={1000}
               height={1000}
               alt="about"
-              className="w-full lg:w-[35vw] h-72 border rounded-t  hover:rounded object-cover shadow-lg shadow-white transform   z-50 "
+              className="w-full lg:w-[35vw] md:h-72 border rounded-t  hover:rounded object-contain md:object-cover shadow-lg shadow-white transform   z-50 "
             />
               <p className="font-bold text-purple-500 text-lg text-start p-3">HAVELI BISTRO</p>
             </div>
@@ -422,7 +422,7 @@ export default function Home() {
               width={1000}
               height={1000}
               alt="about"
-              className="w-full lg:w-[35vw] h-72 border rounded-t  hover:rounded object-cover shadow-lg shadow-white transform   z-50 "
+              className="w-full lg:w-[35vw] md:h-72 border rounded-t  hover:rounded object-contain md:object-cover shadow-lg shadow-white transform   z-50 "
             />
               <p className="font-bold text-purple-500 text-lg text-start p-3">PARATHA 2 PASTA</p>
             </div>
