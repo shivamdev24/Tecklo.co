@@ -37,7 +37,8 @@ import {
   ChartBarIcon,
   ServerIcon,
   AdjustmentsIcon,
-  SupportIcon
+  SupportIcon,
+  // SupportIcon
 } from '@heroicons/react/outline';
 
 
@@ -70,6 +71,11 @@ const features = [
   {
     title: 'Support and Maintenance',
     icon: SupportIcon,
+  },
+  {
+    title: 'Custom Software Development',
+    icon: SupportIcon
+ // Add an appropriate icon here
   },
 ];
 
@@ -381,48 +387,48 @@ export default function Home() {
       
       <section className="py-8 relative flex flex-col items-center bg-gradient-to-tr   from-[#fff] to-purple-500/[.5]">
         <h1 className="z-30 relative text-center font-bold text-2xl lg:text-4xl text-purple-600 py-10">Our Project</h1>
-        <div className="absolute pointer-events-none inset-1 flex items-center justify-center   [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]"></div>
-        <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto gap-5 px-5 lg:px-0 justify-center items-center">
+        {/* <div className="absolute pointer-events-none inset-1 flex items-center justify-center   [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]"></div> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto gap-8 px-5 lg:px-0 justify-center items-center">
           <Fade direction="down">
-            <div className="border w-full lg:w-[35vw] hover:scale-110  duration-500 rounded bg-white"> <Image
+            <div className="border w-full  hover:scale-105  duration-500 rounded bg-white"> <Image
               src={A1}
               width={1000}
               height={1000}
               alt="about"
-              className="w-full lg:w-[35vw] md:h-72 border rounded-t  hover:rounded  object-contain md:object-cover shadow-lg shadow-white transform   z-50 "
+              className="w-full  border rounded-t  hover:rounded  object-contain md:object-cover shadow-lg shadow-white transform   z-50 "
             />
               <p className="font-bold text-purple-500 text-lg text-start p-3">Sweepy Maid</p>
             </div>
          </Fade>
           <Fade direction="down">
-            <div className="border w-full lg:w-[35vw] hover:scale-110 duration-500 rounded bg-white"> <Image
+            <div className="border w-full  hover:scale-105 duration-500 rounded bg-white"> <Image
               src={B1}
               width={1000}
               height={1000}
               alt="about"
-              className="w-full lg:w-[35vw] md:h-72 border rounded-t  hover:rounded object-contain md:object-cover shadow-lg shadow-white transform   z-50 "
+              className="w-full  border rounded-t  hover:rounded object-contain md:object-cover shadow-lg shadow-white transform   z-50 "
             />
               <p className="font-bold text-purple-500 text-lg text-start p-3">Pho 68</p>
             </div>
           </Fade>
           <Fade direction="down">
-            <div className="border w-full lg:w-[35vw] hover:scale-110 duration-500 rounded bg-white"> <Image
+            <div className="border w-full hover:scale-105 duration-500 rounded bg-white"> <Image
               src={C1}
               width={1000}
               height={1000}
               alt="about"
-              className="w-full lg:w-[35vw] md:h-72 border rounded-t  hover:rounded object-contain md:object-cover shadow-lg shadow-white transform   z-50 "
+              className="w-full   border rounded-t  hover:rounded object-contain md:object-cover shadow-lg shadow-white transform   z-50 "
             />
               <p className="font-bold text-purple-500 text-lg text-start p-3">HAVELI BISTRO</p>
             </div>
          </Fade>
           <Fade direction="down">
-            <div className="border w-full lg:w-[35vw] hover:scale-110 duration-500 rounded bg-white"> <Image
+            <div className="border w-full hover:scale-105 duration-500 rounded bg-white"> <Image
               src={D1}
               width={1000}
               height={1000}
               alt="about"
-              className="w-full lg:w-[35vw] md:h-72 border rounded-t  hover:rounded object-contain md:object-cover shadow-lg shadow-white transform   z-50 "
+              className="w-full  border rounded-t  hover:rounded object-contain md:object-cover shadow-lg shadow-white transform   z-50 "
             />
               <p className="font-bold text-purple-500 text-lg text-start p-3">PARATHA 2 PASTA</p>
             </div>
@@ -473,7 +479,7 @@ export default function Home() {
 
             </div>
             <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-              <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-12">
+              <dl className="grid  max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:flex-wrap lg:gap-y-12">
                 <Fade direction="up">
                   {features.map((feature) => (
                     <div key={feature.title} className=" h-24 flex items-center border border-purple-300 rounded p-4 shadow-md hover:shadow-xl duration-500">
