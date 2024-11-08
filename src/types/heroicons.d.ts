@@ -6,5 +6,6 @@ declare module "@heroicons/react/outline" {
   export const ServerIcon: typeof Icon;
   export const AdjustmentsIcon: typeof Icon;
   export const SupportIcon: typeof Icon;
+  export const CodeIcon: typeof Icon;
   // Add other icons as needed
 }

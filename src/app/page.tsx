@@ -32,52 +32,51 @@ import B1 from '@/assets/images/B1.png'
 import C1 from '@/assets/images/C1.png'
 import D1 from '@/assets/images/D1.png'
 import CTAButton from "@/components/CTAButton";
-import {
-  SearchIcon,
-  ChartBarIcon,
-  ServerIcon,
-  AdjustmentsIcon,
-  SupportIcon,
-  // SupportIcon
-} from '@heroicons/react/outline';
+import React from "react";
+
+
 
 
 const BackgroundBeams = dynamic(() => import('@/components/ui/background-beams'))
 // const InfiniteTextMoving = dynamic(() => import('@/components/infinite-moving-text/InfiniteTextMoving'))
 
 
-
-
-
-
+import {
+  SearchIcon,
+  ChartBarIcon,
+  ServerIcon,
+  AdjustmentsIcon,
+  SupportIcon,
+  CodeIcon,
+} from '@heroicons/react/outline';
 
 const features = [
   {
     title: 'Search Engine Optimization (SEO)',
-    icon: SearchIcon,
+    icon: SearchIcon, // Represents SEO-related functions well
   },
   {
     title: 'Digital Marketing, Applications Advertising, and Content Strategy',
-    icon: ChartBarIcon,
+    icon: ChartBarIcon, // Represents analytics, marketing, or strategy
   },
   {
     title: 'Web Infrastructure and Operations',
-    icon: ServerIcon,
+    icon: ServerIcon, // Represents servers and infrastructure
   },
   {
     title: 'Integration with Enterprise Systems',
-    icon: AdjustmentsIcon,
+    icon: AdjustmentsIcon, // Represents configuration or integration
   },
   {
     title: 'Support and Maintenance',
-    icon: SupportIcon,
+    icon: SupportIcon, // Represents customer or technical support
   },
   {
     title: 'Custom Software Development',
-    icon: SupportIcon
- // Add an appropriate icon here
+    icon: CodeIcon, // Represents coding and software development
   },
 ];
+
 
 
 
@@ -180,8 +179,6 @@ const stats = [
 
 
 export default function Home() {
-
-
 
 
 
@@ -479,18 +476,19 @@ export default function Home() {
 
             </div>
             <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-              <dl className="grid  max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:flex-wrap lg:gap-y-12">
+              <dl className="grid  max-w-xl grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10 lg:max-w-none lg:flex-wrap lg:gap-y-12">
                 <Fade direction="up">
                   {features.map((feature) => (
                     <div key={feature.title} className=" h-24 flex items-center border border-purple-300 rounded p-4 shadow-md hover:shadow-xl duration-500">
-                      <dt className="text-base/7 flex items-center rounded  gap-5 font-semibold text-gray-900">
-                        <div className=" left-0 top-0 flex h-10 w-10 items-center justify-center rounded bg-purple-600">
+                      <dt className="text-base/7 flex items-center rounded gap-5 font-semibold text-gray-900">
+                        <div className="left-0 top-0 flex h-10 w-10 items-center justify-center rounded bg-purple-600">
                           <feature.icon aria-hidden="true" className="h-6 w-10 text-white" />
                         </div>
                         {feature.title}
                       </dt>
                     </div>
                   ))}
+
                 </Fade>
               </dl>
             </div>

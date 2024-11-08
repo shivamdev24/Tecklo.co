@@ -29,6 +29,8 @@ import I1 from '@/assets/images/I1.png'
 import I2 from '@/assets/images/I2.png'
 import J1 from '@/assets/images/J1.png'
 import J2 from '@/assets/images/J2.png'
+import AP1 from '@/assets/images/ap1.jpg'
+import AP2 from '@/assets/images/ap2.jpg'
 
 
 
@@ -145,6 +147,23 @@ const Project = [
   },
 ];
 
+
+
+
+
+const AppProject = [
+  {
+    projectName: "EpicHair",
+    projectDescription:
+      " EpicHair is a premier Vancouver salon bar offering expert hair styling and grooming in a modern, stylish setting.",
+    img1: AP1,
+    img2: AP2,
+}]
+
+
+
+
+
 function page() {
   return (
     <>
@@ -233,13 +252,13 @@ function page() {
                   </a> */}
                 </div>
                 <div className="flex flex-col md:flex-row gap-4">
-                  <div className="border rounded-[8px] h-56 overflow-hidden w-full md:w-96 bg-blue-600 shadow-md">
+                  <div className="border hover:shadow-xl duration-500 rounded-[8px] h-56 overflow-hidden w-full md:w-96 bg-purple-600 shadow-md">
                     <Image
                       src={props.img1}
                       width={1000}
                       height={1000}
                       alt="project image"
-                      className="w-full md:w-96 mt-4 ml-4 rounded "
+                      className="w-full md:w-96 h-56 mt-4 ml-4 rounded object-fill "
                     />
                   </div>
                   <Image
@@ -247,8 +266,53 @@ function page() {
                     width={1000}
                     height={1000}
                     alt="project image"
-                    className="w-full md:w-96 rounded-[8px] shadow-md border"
+                    className="w-full md:w-96 hover:shadow-xl duration-500 rounded-[8px] shadow-md border"
                   />
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-col gap-10 py-10 px-5">
+            {AppProject.map((props, index) => (
+              <div
+                key={index}
+                className="  border-t-2 border-purple-500"
+              >
+                <div className=' max-w-7xl mx-auto  flex flex-col-reverse md:flex-row gap-10 py-10 items-center'>
+                  <div className="w-full md:w-1/3 flex flex-col gap-4">
+                    <h1 className="text-4xl font-bold text-purple-500">
+                      {props.projectName}
+                    </h1>
+                    <p className="text-base text-gray-600">
+                      {props.projectDescription}
+                    </p>
+                    {/* <a
+                    className="bg-gray-700 p-2 w-full text-center rounded text-white hover:bg-blue-800 duration-500"
+                    href={props.Live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Preview
+                  </a> */}
+                  </div>
+                  <div className="  flex flex-col md:flex-row gap-8">
+                    <div className="border rounded-[15px] h-[70vh] overflow-hidden w-full md:w-72 bg-purple-600 shadow-md hover:shadow-xl duration-500">
+                      <Image
+                        src={props.img1}
+                        width={1000}
+                        height={1000}
+                        alt="project image"
+                        className="w-full md:w-72  h-[70vh] object-cover  mt-4 ml-4 rounded-[6px] border "
+                      />
+                    </div>
+                    <Image
+                      src={props.img2}
+                      width={1000}
+                      height={1000}
+                      alt="project image"
+                      className="w-full md:w-72  h-[70vh] hover:shadow-xl duration-500 object-cover p-2 bg-purple-900 rounded-[20px] shadow-md border"
+                    />
+                  </div>
                 </div>
               </div>
             ))}
